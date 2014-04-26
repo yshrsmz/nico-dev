@@ -18,13 +18,6 @@ time, mark, audio, video {
     /*vertical-align:baseline;*/
     background:transparent;
 
-    &:before,
-    &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        //TODO:あとで手を付ける
-    }
 }
 
 body {

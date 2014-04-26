@@ -4,9 +4,77 @@
 //@import "_site_header";
 //@import "_special_pickup";
 
+$commonIconSpritePath:"../img/sprite/common_sprite.png";
+$commonIconSpritePathSizeX: 334px;
+$commonIconSpritePathSizeY: 136px;
+
+%prePsedo {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+%commonSprite {
+    background-image: url($commonIconSpritePath);
+    background-size:  ($commonIconSpritePathSizeX / 2) ($commonIconSpritePathSizeY / 2);
+}
+
+
+.icons {
+    @extend %commonSprite;
+    text-indent: -9999px;
+}
+
+.search,
+.menu {
+    width: 22px;
+    height: 22px;
+}
+
+.search {
+    background-position: -22px -23px;
+}
+
+.menu {
+    background-position: 0px -23px;
+}
+
 .wrapper {
     width: 95%;
     margin: 0 auto;
 }
+
+.pageHeader {
+    width: 100%;
+    background: #222;
+    padding: 10px;
+    position: relative;
+
+    &:after {
+        @extend %prePsedo;
+        clear: both;
+    }
+}
+
+
+.siteLogo {
+    @extend %commonSprite;
+    width: 140px;
+    height: 23px;
+    text-indent: -9999px;
+    display: inline-block;
+}
+
+.pageHeadNavi {
+    display: -webkit-box;
+    float:right;
+
+    .icons {
+        margin: 0px 5px;
+    }
+}
+
+
+
 
 
