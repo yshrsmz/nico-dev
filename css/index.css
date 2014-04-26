@@ -96,8 +96,7 @@ figcaption {
 .icons.search, .icons.search.on, .icons.menu, .icons.menu.on, .siteLogo {
   background-image: url("../img/sprite/sp_common.png");
   background-repeat: no-repeat;
-  background-size: 165px 71px; }
-
+  background-size: 255px 90px; }
 
 .moreInfo:after, .linkArrow:after {
   content: "";
@@ -128,19 +127,19 @@ figcaption {
 .icons.search {
   width: 25px;
   height: 25px;
-  background-position: -50px -25px; }
+  background-position: -90px 0px; }
   .icons.search.on {
     width: 25px;
     height: 25px;
-    background-position: 0px -25px; }
+    background-position: -55px -60px; }
 .icons.menu {
   width: 25px;
   height: 25px;
-  background-position: 0px 0px; }
+  background-position: -90px -25px; }
   .icons.menu.on {
     width: 25px;
     height: 25px;
-    background-position: -25px -25px; }
+    background-position: -30px -60px; }
 
 .loginBtn, .registNormal, .registPremiam {
   display: inline-block;
@@ -217,7 +216,7 @@ figcaption {
 .siteLogo {
   width: 140px;
   height: 25px;
-  background-position: -25px 0px;
+  background-position: -115px 0px;
   display: inline-block; }
 
 .pageHeadNavi {

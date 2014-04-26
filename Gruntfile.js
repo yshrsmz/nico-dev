@@ -85,36 +85,7 @@ module.exports = function(grunt) {
                     }
                 },
                 files: {
-                    // key: base path for all output files.
-                    // value: image file directory
                     '.': 'img/sprite/src/sp_common/*'
-                }
-            },
-            category: {
-                options: {
-                    // output file path
-                    outputCss: 'scss/sprite/_sp_category.scss',
-
-                    // actual path written in output css file.
-                    httpImagePath: '../img/sprite/sp_category.png',
-
-                    layoutType: 'default',
-                    spIdentifier: '',
-                    output: {
-                        legacy: {
-                            pixelRatio: 1,
-                            outputImage: './img/sprite/sp_category_bk.png'
-                        },
-                        retina: {
-                            pixelRatio: 2,
-                            outputImage: './img/sprite/sp_category.png'
-                        }
-                    }
-                },
-                files: {
-                    // key: base path for all output files.
-                    // value: image file directory
-                    '.': 'img/sprite/src/sp_category/*'
                 }
             }
         },
@@ -154,7 +125,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-csso');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
-    grunt.loadNpmTasks('grunt-spritesmith');
     grunt.loadNpmTasks('grunt-spritesheet-generator');
 
     // Default task(s).

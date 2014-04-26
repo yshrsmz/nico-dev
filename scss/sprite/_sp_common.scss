@@ -1,84 +1,126 @@
 %_sp_common {
    background-image: url("../img/sprite/sp_common.png");
    background-repeat: no-repeat;
-   background-size: 165px 71px;
+   background-size: 255px 90px;
 }
 
-@mixin commonMenuOff {
+@mixin categoryAll {
     @extend %_sp_common;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background-position: 0px 0px;
 }
-@mixin commonLogo {
+@mixin categoryLife {
     @extend %_sp_common;
-    width: 140px;
-    height: 25px;
-    background-position: -25px 0px;
+    width: 30px;
+    height: 30px;
+    background-position: -30px 0px;
 }
-@mixin commonSearchOn {
+@mixin categoryOther {
     @extend %_sp_common;
-    width: 25px;
-    height: 25px;
-    background-position: 0px -25px;
+    width: 30px;
+    height: 30px;
+    background-position: 0px -30px;
+}
+@mixin categoryPolitics {
+    @extend %_sp_common;
+    width: 30px;
+    height: 30px;
+    background-position: -30px -30px;
+}
+@mixin categoryTech {
+    @extend %_sp_common;
+    width: 30px;
+    height: 30px;
+    background-position: -60px 0px;
+}
+@mixin categoryEnt {
+    @extend %_sp_common;
+    width: 30px;
+    height: 30px;
+    background-position: -60px -30px;
+}
+@mixin categoryCulture {
+    @extend %_sp_common;
+    width: 30px;
+    height: 30px;
+    background-position: 0px -60px;
 }
 @mixin commonMenuOn {
     @extend %_sp_common;
     width: 25px;
     height: 25px;
-    background-position: -25px -25px;
+    background-position: -30px -60px;
+}
+@mixin commonSearchOn {
+    @extend %_sp_common;
+    width: 25px;
+    height: 25px;
+    background-position: -55px -60px;
 }
 @mixin commonSearchOff {
     @extend %_sp_common;
     width: 25px;
     height: 25px;
-    background-position: -50px -25px;
+    background-position: -90px 0px;
+}
+@mixin commonMenuOff {
+    @extend %_sp_common;
+    width: 25px;
+    height: 25px;
+    background-position: -90px -25px;
+}
+@mixin commonLogo {
+    @extend %_sp_common;
+    width: 140px;
+    height: 25px;
+    background-position: -115px 0px;
 }
 @mixin commonNews {
     @extend %_sp_common;
     width: 22px;
     height: 22px;
-    background-position: -75px -25px;
-}
-@mixin commonTvMain {
-    @extend %_sp_common;
-    width: 22px;
-    height: 22px;
-    background-position: -97px -25px;
+    background-position: -115px -25px;
 }
 @mixin commonLive {
     @extend %_sp_common;
     width: 22px;
     height: 22px;
-    background-position: -119px -25px;
+    background-position: -137px -25px;
 }
-@mixin commonCh {
+@mixin commonTvMain {
     @extend %_sp_common;
-    width: 21px;
-    height: 21px;
-    background-position: -141px -25px;
+    width: 22px;
+    height: 22px;
+    background-position: -159px -25px;
 }
 @mixin commonBlog {
     @extend %_sp_common;
     width: 20px;
     height: 21px;
-    background-position: 0px -50px;
+    background-position: -181px -25px;
 }
-@mixin commonEnterbrain {
+@mixin commonCh {
     @extend %_sp_common;
-    width: 20px;
-    height: 19px;
-    background-position: -20px -50px;
+    width: 21px;
+    height: 21px;
+    background-position: -201px -25px;
 }
 @mixin commonTvShadow {
     @extend %_sp_common;
     width: 20px;
     height: 19px;
-    background-position: -39px -50px;
+    background-position: -222px -25px;
+}
+@mixin commonEnterbrain {
+    @extend %_sp_common;
+    width: 20px;
+    height: 19px;
+    background-position: -115px -47px;
 }
 @mixin commonBook {
     @extend %_sp_common;
     width: 21px;
     height: 14px;
-    background-position: -59px -50px;
+    background-position: -135px -47px;
 }
