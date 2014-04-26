@@ -90,10 +90,10 @@ hr {
 input, select {
   vertical-align: middle; }
 
-.pageHeader:after, .newRegistBtns:after {
+.pageHeader:after, .newRegistBtns:after, .listWithImage li:after {
   content: "";
   display: block;
-  position: absolute; }
+  clear: both; }
 
 .icons, .siteLogo {
   text-indent: 100%;
@@ -155,8 +155,6 @@ input, select {
   padding: 10px;
   position: relative;
   margin-bottom: 10px; }
-  .pageHeader:after {
-    clear: both; }
 
 .siteLogo {
   width: 140px;
@@ -180,8 +178,6 @@ input, select {
 
 .newRegistBtns {
   display: block; }
-  .newRegistBtns:after {
-    clear: both; }
 
 .newRegistBtns li {
   display: inline-block;
@@ -203,12 +199,13 @@ input, select {
   border-radius: 3px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-bottom: none; }
+  border-bottom: none;
+  cursor: pointer; }
   .contentTabsList li:first-child {
     margin: 0px; }
   .contentTabsList li:last-child {
     margin: 0px; }
-  .contentTabsList li[data-select="select"] {
+  .contentTabsList li.selected {
     background: #222;
     color: #fff; }
 
@@ -218,3 +215,35 @@ input, select {
 
 .tabContentWrapper {
   position: relative; }
+
+.tabContents {
+  top: 0px;
+  left: 0px;
+  display: none; }
+  .tabContents.selected {
+    display: block; }
+
+.listWithImage {
+  font-size: 12px; }
+  .listWithImage a {
+    color: #13346e;
+    text-decoration: none; }
+  .listWithImage li {
+    padding: 5px 0px;
+    border-bottom: 1px solid #222; }
+    .listWithImage li:last-child {
+      border: none; }
+
+.timeHeader {
+  color: #f00;
+  text-decoration: none;
+  font-size: 10px;
+  margin-bottom: 3px; }
+  .timeHeader time {
+    color: #999;
+    margin-right: 5px; }
+
+.listImg {
+  width: 24%;
+  float: left;
+  margin: 0px 5px; }

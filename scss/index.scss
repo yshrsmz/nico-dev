@@ -14,6 +14,12 @@ $commonIconSpritePathSizeY: 136px;
     position: absolute;
 }
 
+%clearFix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 %noText {
     text-indent: 100%;
     white-space: nowrap;
@@ -102,8 +108,7 @@ $commonIconSpritePathSizeY: 136px;
     margin-bottom: 10px;
 
     &:after {
-        @extend %prePsedo;
-        clear: both;
+        @extend %clearFix;
     }
 }
 
@@ -144,8 +149,7 @@ $commonIconSpritePathSizeY: 136px;
 
 
     &:after {
-        @extend %prePsedo;
-        clear: both;
+        @extend %clearFix;
     }
 }
 
@@ -175,6 +179,7 @@ $commonIconSpritePathSizeY: 136px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border-bottom: none;
+    cursor: pointer;
 
     &:first-child {
         margin: 0px;
@@ -184,7 +189,7 @@ $commonIconSpritePathSizeY: 136px;
         margin: 0px;
     }
 
-    &[data-select="select"] {
+    &.selected {
         background: #222;
         color: #fff;
     }
@@ -200,8 +205,53 @@ $commonIconSpritePathSizeY: 136px;
     position: relative;
 }
 
-.listImage {
+.tabContents {
+    top: 0px;
+    left: 0px;
+    display: none;
 
+    &.selected {
+        display: block;
+    }
+}
+
+.listWithImage {
+    font-size: 12px;
+
+    a {
+        color: #13346e;
+        text-decoration: none;
+    }
+
+    li {
+        padding: 5px 0px;
+        border-bottom: 1px solid #222;
+
+        &:after {
+            @extend %clearFix;
+        }
+        &:last-child {
+            border: none;
+        }
+    }
+}
+
+.timeHeader {
+    color: #f00;
+    text-decoration: none;
+    font-size: 10px;
+    margin-bottom: 3px;
+
+    time {
+        color: #999;
+        margin-right: 5px;
+    }
+}
+
+.listImg {
+    width: 24%;
+    float: left;
+    margin: 0px 5px;
 }
 
 
