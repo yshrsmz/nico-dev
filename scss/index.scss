@@ -19,7 +19,7 @@ $commonIconSpritePathSizeY: 136px;
     background-size:  ($commonIconSpritePathSizeX / 2) ($commonIconSpritePathSizeY / 2);
 }
 
-
+//icons
 .icons {
     @extend %commonSprite;
     text-indent: -9999px;
@@ -39,16 +39,60 @@ $commonIconSpritePathSizeY: 136px;
     background-position: 0px -23px;
 }
 
+//btns
+%btnSizeCommon {
+    display: inline-block;
+    text-align: center;
+    width: 99%;
+    height: 35px;
+    line-height: 35px;
+    margin: 0px auto 12px;
+    font-size: 16px;
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+    border-radius: 4px;
+
+    a {
+        color: #fff;
+    }
+}
+
+.loginBtn {
+    @extend %btnSizeCommon;
+    margin-bottom: 10px;
+    color: #fff;
+    background: #498dca;
+    border-color: #36668e;
+}
+
+.registNormal {
+    @extend %btnSizeCommon;
+    background: #f2bd15;
+    border-color: #ae8a10;
+    margin-right: 10px;
+}
+
+.registPremiam {
+    @extend %btnSizeCommon;
+    background: #c94d4b;
+    border-color: #8c3837;
+}
+
+
+//wrapper
 .wrapper {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 
+
+//header
 .pageHeader {
     width: 100%;
     background: #222;
     padding: 10px;
     position: relative;
+    margin-bottom: 10px;
 
     &:after {
         @extend %prePsedo;
@@ -68,12 +112,80 @@ $commonIconSpritePathSizeY: 136px;
 .pageHeadNavi {
     display: -webkit-box;
     float:right;
+    margin-right: 15px;
 
     .icons {
         margin: 0px 5px;
     }
 }
 
+//mainContent
+.mainContent {
+    width: 95%;
+    margin: 0px auto;
+}
+
+
+.loginBtnBox {
+    width: 90%;
+    text-align: center;
+    margin: 0px auto 10px;
+}
+
+//新規登録
+.newRegistBtns {
+    display: block;
+
+
+    &:after {
+        @extend %prePsedo;
+        clear: both;
+    }
+}
+
+
+.newRegistBtns li{
+    display: inline-block;
+    margin: 0px auto;
+    width: 49%;
+}
+
+
+//タブ
+.contentTabsList {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    border-bottom: 1px solid #333;
+}
+
+.contentTabsList li {
+    width: 32%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin: 0px 5px;
+    border: 1px solid #222;
+    border-radius: 3px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: none;
+
+    &:first-child,
+    &:last-child{
+        margin: 0px;
+    }
+
+    &[data-select="select"] {
+        background: #222;
+        color: #fff;
+    }
+}
+
+//tabcontent
+.tabContents {
+    border: 1px solid #222;
+    border-top: none;
+}
 
 
 

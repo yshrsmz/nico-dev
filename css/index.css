@@ -89,7 +89,7 @@ hr {
 input, select {
   vertical-align: middle; }
 
-.pageHeader:after {
+.pageHeader:after, .newRegistBtns:after {
   content: "";
   display: block;
   position: absolute; }
@@ -112,15 +112,45 @@ input, select {
 .menu {
   background-position: 0px -23px; }
 
+.loginBtn, .registNormal, .registPremiam {
+  display: inline-block;
+  text-align: center;
+  width: 99%;
+  height: 35px;
+  line-height: 35px;
+  margin: 0px auto 12px;
+  font-size: 16px;
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  border-radius: 4px; }
+  .loginBtn a, .registNormal a, .registPremiam a {
+    color: #fff; }
+
+.loginBtn {
+  margin-bottom: 10px;
+  color: #fff;
+  background: #498dca;
+  border-color: #36668e; }
+
+.registNormal {
+  background: #f2bd15;
+  border-color: #ae8a10;
+  margin-right: 10px; }
+
+.registPremiam {
+  background: #c94d4b;
+  border-color: #8c3837; }
+
 .wrapper {
-  width: 95%;
+  width: 100%;
   margin: 0 auto; }
 
 .pageHeader {
   width: 100%;
   background: #222;
   padding: 10px;
-  position: relative; }
+  position: relative;
+  margin-bottom: 10px; }
   .pageHeader:after {
     clear: both; }
 
@@ -132,6 +162,52 @@ input, select {
 
 .pageHeadNavi {
   display: -webkit-box;
-  float: right; }
+  float: right;
+  margin-right: 15px; }
   .pageHeadNavi .icons {
     margin: 0px 5px; }
+
+.mainContent {
+  width: 95%;
+  margin: 0px auto; }
+
+.loginBtnBox {
+  width: 90%;
+  text-align: center;
+  margin: 0px auto 10px; }
+
+.newRegistBtns {
+  display: block; }
+  .newRegistBtns:after {
+    clear: both; }
+
+.newRegistBtns li {
+  display: inline-block;
+  margin: 0px auto;
+  width: 49%; }
+
+.contentTabsList {
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  border-bottom: 1px solid #333; }
+
+.contentTabsList li {
+  width: 32%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin: 0px 5px;
+  border: 1px solid #222;
+  border-radius: 3px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: none; }
+  .contentTabsList li:first-child, .contentTabsList li:last-child {
+    margin: 0px; }
+  .contentTabsList li[data-select="select"] {
+    background: #222;
+    color: #fff; }
+
+.tabContents {
+  border: 1px solid #222;
+  border-top: none; }
