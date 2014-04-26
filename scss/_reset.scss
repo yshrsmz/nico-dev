@@ -108,3 +108,20 @@ input, select {
 em {
     font-style: normal;
 }
+
+figure {
+    position: relative;
+    img {
+
+        width: 100%;
+    }
+}
+
+figcaption {
+    background: #222;
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 3px 5px;
+}
