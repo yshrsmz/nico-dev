@@ -31,122 +31,128 @@
     <header class="pageHeader">
         <h1 class="siteLogo">niconico</h1>
         <ul class="pageHeadNavi">
-            <li class="pageHeadIcon search">検索</li>
-            <li class="pageHeadIcon menu">メニュー</li>
+            <li class="icons search">検索</li>
+            <li class="icons menu">メニュー</li>
         </ul>
     </header>
     <div class="mainContent">
         <div class="loginBtnBox">
-            <p class="loginBtn"><a href="#" class="loginBtn">ログイン</a></p>
-            <p class="toRegistPremiam">プレミアム登録はこちら</p>
+            <p class="loginBtn"><a href="#">ログイン</a></p>
+            <ul class="newRegistBtns">
+                <li class="registNormal"><a href="#">新規会員登録</a></li>
+                <li class="registPremiam"><a href="#">プレミアム登録</a></li>
+            </ul>
         </div>
         <section class="sectionContentBox top">
             <ul class="contentTabsList">
-                <li data-show-id="live">生放送</li>
+                <li data-show-id="live" data-select="select">生放送</li>
                 <li data-show-id="recommend">おすすめ</li>
                 <li data-show-id="vocaloid">VOCALOID</li>
             </ul>
-            <div class="tabContents" id="live">
-                <ul class="listImage">
-                    <li>
-                        <a href="#" class="lineLink">
-                            <img src="">
-                            <p><time>00:00〜00:00</time>NOW ON AIR!!</p>
-                            <p>
-                                見出し見出し見出し
-                                <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="lineLink">
-                            <img src="">
-                            <p><time>00:00〜00:00</time>NOW ON AIR!!</p>
-                            <p>
-                                見出し見出し見出し
-                                <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="lineLink">
-                            <img src="">
-                            <p><time>00:00〜00:00</time>NOW ON AIR!!</p>
-                            <p>
-                                見出し見出し見出し
-                                <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="tabContents" id="recommend">
-                <ul class="listImage">
-                    <li>
-                        <a href="#" class="lineLink">
-                            <img src="">
-                            <p><time>00:00〜00:00</time>NOW ON AIR!!</p>
-                            <p>
-                                見出し見出し見出し
-                                <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="lineLink">
-                            <img src="">
-                            <p><time>00:00〜00:00</time>NOW ON AIR!!</p>
-                            <p>
-                                見出し見出し見出し
-                                <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="lineLink">
-                            <img src="">
-                            <p><time>00:00〜00:00</time>NOW ON AIR!!</p>
-                            <p>
-                                見出し見出し見出し
-                                <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="tabContents" id="vocaloid">
-                <ul class="listImage">
-                    <li>
-                        <a href="#" class="lineLink">
-                            <img src="">
-                            <p><time>00:00〜00:00</time>NOW ON AIR!!<span class="rankingNum">1</span></p>
-                            <p>
-                                見出し見出し見出し
-                                <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="lineLink">
-                            <img src="">
-                            <p><time>00:00〜00:00</time>NOW ON AIR!!<span class="rankingNum">1</span></p>
-                            <p>
-                                見出し見出し見出し
-                                <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="lineLink">
-                            <img src="">
-                            <p><time>00:00〜00:00</time>NOW ON AIR!!<span class="rankingNum">1</span></p>
-                            <p>
-                                見出し見出し見出し
-                                <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
-                            </p>
-                        </a>
-                    </li>
-                </ul>
+            <div class="tabContentWrapper">
+                <div class="tabContents" id="live">
+                    <ul class="listImage">
+                        <li>
+                            <a href="#" class="lineLink">
+                                <img src="">
+                                <p><time>00:00〜00:00</time>NOW ON AIR!!</p>
+                                <p>
+                                    見出し見出し見出し
+                                    <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="lineLink">
+                                <img src="">
+                                <p><time>00:00〜00:00</time>NOW ON AIR!!</p>
+                                <p>
+                                    見出し見出し見出し
+                                    <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="lineLink">
+                                <img src="">
+                                <p><time>00:00〜00:00</time>NOW ON AIR!!</p>
+                                <p>
+                                    見出し見出し見出し
+                                    <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabContents" id="recommend">
+                    <ul class="listImage">
+                        <li>
+                            <a href="#" class="lineLink">
+                                <img src="">
+                                <p><time>00:00〜00:00</time>NOW ON AIR!!</p>
+                                <p>
+                                    見出し見出し見出し
+                                    <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="lineLink">
+                                <img src="">
+                                <p><time>00:00〜00:00</time>NOW ON AIR!!</p>
+                                <p>
+                                    見出し見出し見出し
+                                    <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="lineLink">
+                                <img src="">
+                                <p><time>00:00〜00:00</time>NOW ON AIR!!</p>
+                                <p>
+                                    見出し見出し見出し
+                                    <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabContents" id="vocaloid">
+                    <ul class="listImage">
+                        <li>
+                            <a href="#" class="lineLink">
+                                <img src="">
+                                <p><time>00:00〜00:00</time>NOW ON AIR!!<span class="rankingNum">1</span></p>
+                                <p>
+                                    見出し見出し見出し
+                                    <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="lineLink">
+                                <img src="">
+                                <p><time>00:00〜00:00</time>NOW ON AIR!!<span class="rankingNum">1</span></p>
+                                <p>
+                                    見出し見出し見出し
+                                    <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="lineLink">
+                                <img src="">
+                                <p><time>00:00〜00:00</time>NOW ON AIR!!<span class="rankingNum">1</span></p>
+                                <p>
+                                    見出し見出し見出し
+                                    <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </section>
         <section class="sectionContentBox">

@@ -16,33 +16,8 @@ time, mark, audio, video {
   outline: 0;
   font-size: 100%;
   /*vertical-align:baseline;*/
-  background: transparent; }
-  html:before, html:after, body:before, body:after, div:before, div:after, span:before, span:after, object:before, object:after, iframe:before, iframe:after,
-  h1:before,
-  h1:after, h2:before, h2:after, h3:before, h3:after, h4:before, h4:after, h5:before, h5:after, h6:before, h6:after, p:before, p:after, blockquote:before, blockquote:after, pre:before, pre:after,
-  abbr:before,
-  abbr:after, address:before, address:after, cite:before, cite:after, code:before, code:after,
-  del:before,
-  del:after, dfn:before, dfn:after, em:before, em:after, img:before, img:after, ins:before, ins:after, kbd:before, kbd:after, q:before, q:after, samp:before, samp:after,
-  small:before,
-  small:after, strong:before, strong:after, sub:before, sub:after, sup:before, sup:after, var:before, var:after,
-  b:before,
-  b:after, i:before, i:after,
-  dl:before,
-  dl:after, dt:before, dt:after, dd:before, dd:after, ol:before, ol:after, ul:before, ul:after, li:before, li:after,
-  fieldset:before,
-  fieldset:after, form:before, form:after, label:before, label:after, legend:before, legend:after,
-  table:before,
-  table:after, caption:before, caption:after, tbody:before, tbody:after, tfoot:before, tfoot:after, thead:before, thead:after, tr:before, tr:after, th:before, th:after,
-  article:before,
-  article:after, aside:before, aside:after, canvas:before, canvas:after, details:before, details:after, figcaption:before, figcaption:after, figure:before, figure:after,
-  footer:before,
-  footer:after, header:before, header:after, hgroup:before, hgroup:after, menu:before, menu:after, nav:before, nav:after, section:before, section:after, summary:before, summary:after,
-  time:before,
-  time:after, mark:before, mark:after, audio:before, audio:after, video:before, video:after {
-    content: "";
-    display: block;
-    position: absolute; }
+  background: transparent;
+  -webkit-box-sizing: border-box; }
 
 body {
   line-height: 1; }
@@ -115,6 +90,131 @@ hr {
 input, select {
   vertical-align: middle; }
 
+.pageHeader:after, .newRegistBtns:after {
+  content: "";
+  display: block;
+  position: absolute; }
+
+.icons, .siteLogo {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block; }
+
+.icons, .siteLogo {
+  background-image: url("../img/sprite/common_sprite.png");
+  background-size: 167px 68px; }
+
+.search,
+.menu {
+  width: 22px;
+  height: 22px; }
+
+.search {
+  background-position: -22px -23px; }
+
+.menu {
+  background-position: 0px -23px; }
+
+.loginBtn, .registNormal, .registPremiam {
+  display: inline-block;
+  text-align: center;
+  width: 99%;
+  height: 35px;
+  line-height: 35px;
+  margin: 0px auto 12px;
+  font-size: 16px;
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  border-radius: 4px; }
+  .loginBtn a, .registNormal a, .registPremiam a {
+    color: #fff; }
+
+.loginBtn {
+  margin-bottom: 10px;
+  color: #fff;
+  background: #498dca;
+  border-color: #36668e; }
+
+.registNormal {
+  background: #f2bd15;
+  border-color: #ae8a10;
+  margin-right: 10px; }
+
+.registPremiam {
+  background: #c94d4b;
+  border-color: #8c3837; }
+
 .wrapper {
-  width: 95%;
+  width: 100%;
   margin: 0 auto; }
+
+.pageHeader {
+  width: 100%;
+  background: #222;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 10px; }
+  .pageHeader:after {
+    clear: both; }
+
+.siteLogo {
+  width: 140px;
+  height: 23px;
+  display: inline-block; }
+
+.pageHeadNavi {
+  display: -webkit-box;
+  float: right; }
+  .pageHeadNavi .icons {
+    margin: 0px 5px; }
+
+.mainContent {
+  width: 95%;
+  margin: 0px auto; }
+
+.loginBtnBox {
+  width: 90%;
+  text-align: center;
+  margin: 0px auto 10px; }
+
+.newRegistBtns {
+  display: block; }
+  .newRegistBtns:after {
+    clear: both; }
+
+.newRegistBtns li {
+  display: inline-block;
+  margin: 0px auto;
+  width: 48%; }
+
+.contentTabsList {
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  border-bottom: 1px solid #333; }
+
+.contentTabsList li {
+  width: 32%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin: 0px 3px;
+  border: 1px solid #222;
+  border-radius: 3px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: none; }
+  .contentTabsList li:first-child {
+    margin: 0px; }
+  .contentTabsList li:last-child {
+    margin: 0px; }
+  .contentTabsList li[data-select="select"] {
+    background: #222;
+    color: #fff; }
+
+.tabContents {
+  border: 1px solid #222;
+  border-top: none; }
+
+.tabContentWrapper {
+  position: relative; }
