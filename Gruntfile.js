@@ -28,7 +28,7 @@ module.exports = function(grunt) {
                 files: {
                     './css/index.min.css': './css/index.css'
                 }
-            },
+            }
         }
     });
 
