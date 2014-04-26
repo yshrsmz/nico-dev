@@ -93,12 +93,12 @@ figcaption {
   right: 0px;
   padding: 3px 5px; }
 
-.icons.search, .icons.search.active, .icons.menu, .icons.menu.active, .userNum:after, .commentNum:after, .favNum:after, .playNum:after, .siteLogo, .ent:after, .life:after, .politics:after, .tech:after, .culture:after, .other:after, .icon.icon-top a:before, .icon.icon-live a:before, .icon.icon-channel a:before, .icon.icon-blomaga a:before, .icon.icon-book a:before, .icon.icon-news a:before {
+.icons.search, .icons.search.active, .icons.menu, .icons.menu.active, .userNum:after, .commentNum:after, .favNum:after, .playNum:after, .siteLogo, .ent:before, .life:before, .politics:before, .tech:before, .culture:before, .other:before, .icon.icon-top a:before, .icon.icon-live a:before, .icon.icon-channel a:before, .icon.icon-blomaga a:before, .icon.icon-book a:before, .icon.icon-news a:before {
   background-image: url("../img/sprite/sp_common.png");
   background-repeat: no-repeat;
   background-size: 255px 90px; }
 
-.moreInfo:after, .infoIcon:after, .linkArrow:after, .categoryIcons:after, .icon a:before {
+.moreInfo:after, .infoIcon:after, .linkArrow:after, .categoryIcons:before, .icon a:before {
   content: "";
   display: block;
   position: absolute; }
@@ -295,7 +295,13 @@ figcaption {
 .categoryIcons {
   position: relative;
   -webkit-box-sizing: border-box; }
-  .categoryIcons:after {
+  .categoryIcons a {
+    display: block; }
+  .categoryIcons .linkArrow {
+    padding: 0px; }
+    .categoryIcons .linkArrow:after {
+      right: 5px; }
+  .categoryIcons:before {
     top: 0px;
     left: 5px; }
 
@@ -304,32 +310,32 @@ figcaption {
   .categoryListBox .categoryIcons {
     padding-left: 40px; }
 
-.ent:after {
+.ent:before {
   width: 30px;
   height: 30px;
   background-position: -60px 0px; }
 
-.life:after {
+.life:before {
   width: 30px;
   height: 30px;
   background-position: -60px -30px; }
 
-.politics:after {
+.politics:before {
   width: 30px;
   height: 30px;
   background-position: 0px -60px; }
 
-.tech:after {
+.tech:before {
   width: 30px;
   height: 30px;
   background-position: -30px 0px; }
 
-.culture:after {
+.culture:before {
   width: 30px;
   height: 30px;
   background-position: -30px -30px; }
 
-.other:after {
+.other:before {
   width: 30px;
   height: 30px;
   background-position: 0px 0px; }
@@ -341,11 +347,10 @@ figcaption {
 
 .newRegistBtns {
   display: block; }
-
-.newRegistBtns li {
-  display: inline-block;
-  margin: 0px auto;
-  width: 48%; }
+  .newRegistBtns li {
+    display: inline-block;
+    margin: 0px 2px;
+    width: 48%; }
 
 .contentTabsList {
   display: -webkit-box;
@@ -605,3 +610,55 @@ figcaption {
   width: 22px;
   height: 22px;
   background-position: -115px -25px; }
+
+.adBox {
+  margin: 10px 0px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222; }
+  .adBox img {
+    width: 100%;
+    margin-bottom: -3px; }
+
+.bookmarkBubble {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
+.bookmarkBubbleInner {
+  position: relative;
+  float: right;
+  right: 10px;
+  bottom: -5px;
+  width: 160px;
+  border: 2px solid #FFFF26;
+  padding: 12px 5px 10px 5px;
+  background-image: url(../img/bookmark/bg.png);
+  background-size: 170px 120px;
+  -webkit-border-radius: 10px;
+  -webkit-box-shadow: 0 0 8px #FFCC33;
+  font: 12px/12px sans-serif;
+  color: #000;
+  line-height: 18px; }
+
+.bookmarkBubbleAppleTouchImage {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: -2px 6px 3px 10px;
+  background: url(../img/apple-touch-icon-114x114.png) no-repeat -1px -1px;
+  -webkit-background-size: 42px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); }
+
+.bookmarkBubbleClose {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+  border: 10px solid transparent;
+  background: url(../img/bookmark/close.png) no-repeat;
+  background-size: 24px; }

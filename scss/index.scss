@@ -270,10 +270,23 @@
     position: relative;
     -webkit-box-sizing: border-box;
 
-    &:after {
-        @extend %prePsedo;
-        top: 0px;
-        left: 5px;
+    a {
+        display: block;
+    }
+
+    .linkArrow {
+        padding: 0px;
+
+        &:after {
+            right: 5px;
+        }
+    }
+
+
+    &:before {
+            @extend %prePsedo;
+            top: 0px;
+            left: 5px;
     }
 }
 
@@ -285,27 +298,27 @@
     }
 }
 
-.ent:after {
+.ent:before {
     @include categoryEnt;
 }
 
-.life:after {
+.life:before {
     @include categoryLife;
 }
 
-.politics:after {
+.politics:before {
     @include categoryPolitics;
 }
 
-.tech:after {
+.tech:before {
     @include categoryTech;
 }
 
-.culture:after {
+.culture:before {
     @include categoryCulture;
 }
 
-.other:after {
+.other:before {
     @include categoryOther;
 }
 
@@ -320,17 +333,15 @@
 .newRegistBtns {
     display: block;
 
+    li{
+        display: inline-block;
+        margin: 0px 2px;
+        width: 48%;
+    }
 
     &:after {
         @extend %clearFix;
     }
-}
-
-
-.newRegistBtns li{
-    display: inline-block;
-    margin: 0px auto;
-    width: 48%;
 }
 
 
@@ -700,4 +711,64 @@
     &.icon-news a:before {
         @include commonNews;
     }
+}
+.adBox {
+    margin: 10px 0px;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+
+    img {
+        width: 100%;
+        margin-bottom: -3px;
+    }
+}
+
+
+
+.bookmarkBubble {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.bookmarkBubbleInner {
+    position: relative;
+    float: right;
+    right: 10px;
+    bottom: -5px;
+    width: 160px;
+    border: 2px solid #FFFF26;
+    padding: 12px 5px 10px 5px;
+    background-image: url(../img/bookmark/bg.png);
+    background-size: 170px 120px;
+    -webkit-border-radius:10px;
+    -webkit-box-shadow: 0 0 8px #FFCC33;
+    font: 12px/12px sans-serif;
+    color : #000;
+    line-height: 18px;
+}
+
+.bookmarkBubbleAppleTouchImage {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: -2px 6px 3px 10px;
+    background: url(../img/apple-touch-icon-114x114.png) no-repeat -1px -1px;
+    -webkit-background-size: 42px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.bookmarkBubbleClose {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    border: 10px solid transparent;
+    background: url(../img/bookmark/close.png) no-repeat;
+    background-size: 24px;
 }

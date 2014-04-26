@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="./img/favicon.ico"/>
     <link rel="apple-touch-icon" href="./img/apple-touch-icon-114x114.png"/>
     <!-- TODO:最後に圧縮ファイル読み込みに変更 -->
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.min.css">
 
     <!-- Google Analytics設定するならしてくだし。ユーザーアカウントの設定は忘れずに！ -->
     <!--<script>-->
@@ -300,15 +300,19 @@
             </ul>
             <p class="moreInfo"><a href="http://sp.nicovideo.jp/ranking?cp_in=rk_tp_rk">ランキングをもっと見る</a></p>
         </section>
+        <div class="adBox">
+            <img src="./img/thum/ad.jpg">
+        </div>
+
         <div class="categoryListBox">
             <h2 class="contentHeader">カテゴリ一覧</h2>
             <ul class="categoryList">
-                <li class="categoryIcons ent"><a href="http://sp.nicovideo.jp/tag/g_ent2?cp_in=tg_tp_category">エンタメ・音楽</a></li>
-                <li class="categoryIcons life"><a href="http://sp.nicovideo.jp/tag/g_life2?cp_in=tg_tp_category">生活・一般・スポ</a></li>
-                <li class="categoryIcons politics"><a href="http://sp.nicovideo.jp/tag/g_politics?cp_in=tg_tp_category">政治</a></li>
-                <li class="categoryIcons tech"><a href="http://sp.nicovideo.jp/tag/g_tech?cp_in=tg_tp_category">科学・技術</a></li>
-                <li class="categoryIcons culture"><a href="http://sp.nicovideo.jp/tag/g_culture2?cp_in=tg_tp_category">アニメ・ゲーム・絵</a></li>
-                <li class="categoryIcons other"><a href="http://sp.nicovideo.jp/tag/g_other?cp_in=tg_tp_category">その他</a></li>
+                <li class="categoryIcons ent"><a class="linkArrow" href="http://sp.nicovideo.jp/tag/g_ent2?cp_in=tg_tp_category">エンタメ・音楽</a></li>
+                <li class="categoryIcons life"><a class="linkArrow" href="http://sp.nicovideo.jp/tag/g_life2?cp_in=tg_tp_category">生活・一般・スポ</a></li>
+                <li class="categoryIcons politics"><a class="linkArrow" href="http://sp.nicovideo.jp/tag/g_politics?cp_in=tg_tp_category">政治</a></li>
+                <li class="categoryIcons tech"><a class="linkArrow" href="http://sp.nicovideo.jp/tag/g_tech?cp_in=tg_tp_category">科学・技術</a></li>
+                <li class="categoryIcons culture"><a class="linkArrow" href="http://sp.nicovideo.jp/tag/g_culture2?cp_in=tg_tp_category">アニメ・ゲーム・絵</a></li>
+                <li class="categoryIcons other"><a class="linkArrow" href="http://sp.nicovideo.jp/tag/g_other?cp_in=tg_tp_category">その他</a></li>
             </ul>
         </div>
         <section class="jscMiddleTabs sectionContentBox newsWord">
@@ -461,9 +465,10 @@
             </ul>
             <p class="moreInfo"><a href="http://sp.nicovideo.jp/info/pickup/?cp_in=infolist_tp">もっと見る</a></p>
         </section>
+        <div class="adBox">
+            <img src="./img/thum/ad.jpg">
+        </div>
         <section class="footerLinks">
-
-
             <p class="user-control"><a href="http://sp.nicovideo.jp/change_mode?mode=pc&amp;uri=%2F">PC表示に切り替え</a></p>
             <ul class="socialBtnList">
                 <li>
@@ -487,7 +492,23 @@
         </section>
     </div>
 </div>
+<div id="jsBookmarkBubble" class="bookmarkBubble" style="display:none;">
+    <div class="bookmarkBubbleInner">
+        <div class="bookmarkBubbleAppleTouchImage"></div>
+        <p><b>ニコニコへ<br>すぐアクセス！</b></p>
 
+        <p id="jsBookmarkBubble1" style="clear:both;margin-left:10px; display:none;">
+            画面下部の<img src="./img/bookmark/browsingicon.png" width="20" border="0">ボタンから<br>
+            <b>ホーム画面に追加</b>しよう！
+        </p>
+
+        <p id="jsBookmarkBubble2" style="clear:both;margin-left:10px; display:none;">
+            画面下部の<b style="font-size:15px">+</b>ボタンから<br>
+            <b>ホーム画面に追加</b>しよう！
+        </p>
+    </div>
+    <a id="jsBookmarkBubbleClose" class="bookmarkBubbleClose"></a>
+</div>
 <input type="hidden" id="jsBaseUrl" value="http://sp.nicovideo.jp/"/>
 <input type="hidden" id="jsRequestedTime" value="1396849680"/>
 <input type="hidden" id="jsNotifyBaseUrl" value="http://notify.nicovideo.jp/"/>
