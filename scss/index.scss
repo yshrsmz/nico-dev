@@ -208,11 +208,17 @@
 }
 
 .sectionContentBox {
+    overflow: hidden;
     &.ranking,
     &.newsWord {
         border-bottom: 1px solid #222;
         margin-bottom: 5px;
     }
+}
+
+.categoryList {
+
+    
 }
 
 

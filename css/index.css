@@ -1,4 +1,15 @@
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -11,7 +22,8 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 body {
   line-height: 1; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block; }
 
 ul {
@@ -23,7 +35,8 @@ blockquote, q {
 textarea {
   resize: none; }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
   content: none; }
 
@@ -114,7 +127,7 @@ figcaption {
   overflow: hidden;
   display: block; }
 
-.moreInfo:after, .linkArrow:after {
+.linkArrow:after {
   border-right: 1px solid blue;
   border-bottom: 1px solid blue;
   -webkit-transform: rotateZ(-45deg);
@@ -123,6 +136,15 @@ figcaption {
   top: 50%;
   right: 10px;
   margin-top: -4px; }
+
+.moreInfo:after {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABmUExURQAAAA8sXw8sXhAsXw8sXg8tXhItXw8tXxAtXwssYw4qYxAtXxAsXw8sXg8sXxAsXhAtXhAtXxAsXhAsXg8tXg8sXg4rXQ8tXw8tXxAtXxAsXgAqVRAtXw8sXxAsXxErYA8tXhAtXxta29AAAAAhdFJOUwCglG5hxDjx/hcSu/z19N/9mPou9+VX4UOI7wbb9vsdd+bVCmgAAABlSURBVBjTbdDHDoAwDAPQUqAte+/p//9JJCQkwMnxHRLHSqlzUTy29QUEulFAIIwEROkJCGSBgEBhBIRLYkZg1wICcy9gPRE+W9+4NnQoDyhSqjn89/sbB0OFbNSodR6XXB1/uQD3JhNLrszUjgAAAABJRU5ErkJggg==);
+  background-size: 10px 10px;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  right: 5px;
+  margin-top: -5px; }
 
 .icons.search {
   width: 25px;
@@ -175,9 +197,11 @@ figcaption {
   width: 100%;
   height: 25px;
   line-height: 25px;
-  padding: 0px 10px;
+  padding: 0px 20px;
   border-bottom: 1px solid #222;
-  position: relative; }
+  position: relative;
+  background: #ccc;
+  text-align: right; }
   .moreInfo:last-child {
     border: none; }
 
@@ -229,9 +253,11 @@ figcaption {
   width: 100%;
   margin: 0px auto; }
 
-.sectionContentBox.ranking, .sectionContentBox.newsWord {
-  border-bottom: 1px solid #222;
-  margin-bottom: 5px; }
+.sectionContentBox {
+  overflow: hidden; }
+  .sectionContentBox.ranking, .sectionContentBox.newsWord {
+    border-bottom: 1px solid #222;
+    margin-bottom: 5px; }
 
 .loginBtnBox {
   width: 90%;
@@ -295,9 +321,13 @@ figcaption {
   .listWithImage a {
     color: #13346e;
     text-decoration: none; }
+  .listWithImage p {
+    width: 95%;
+    line-height: 1.1em; }
   .listWithImage li {
     padding: 5px 0px;
-    border-bottom: 1px solid #222; }
+    border-bottom: 1px solid #222;
+    -webkit-box-sizing: border-box; }
 
 .timeHeader {
   color: #f00;
@@ -346,7 +376,7 @@ figcaption {
   padding-left: 5px;
   border-bottom: 1px solid #222; }
   .wordList li:nth-of-type(even) {
-    border-left: 1px solid #222; }
+    border-left: 1px solid #222222; }
 .wordList a {
   color: #13346e;
   text-decoration: none; }
@@ -363,3 +393,7 @@ figcaption {
   .footerLinks p {
     font-size: 12px;
     margin-bottom: 10px; }
+
+.footerCopy {
+  color: #fff;
+  margin: 10px 0px; }
