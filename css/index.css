@@ -90,6 +90,9 @@ hr {
 input, select {
   vertical-align: middle; }
 
+em {
+  font-style: normal; }
+
 .pageHeader:after, .newRegistBtns:after, .listWithImage li:after {
   content: "";
   display: block;
@@ -145,6 +148,23 @@ input, select {
   background: #c94d4b;
   border-color: #8c3837; }
 
+.moreInfo {
+  font-size: 12px;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  padding: 0px 10px; }
+
+.contentHeader {
+  background: #222;
+  border-bottom: 1px solid #111;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  text-indent: 15px;
+  font-weight: normal; }
+
 .wrapper {
   width: 100%;
   margin: 0 auto; }
@@ -168,7 +188,7 @@ input, select {
     margin: 0px 5px; }
 
 .mainContent {
-  width: 95%;
+  width: 100%;
   margin: 0px auto; }
 
 .loginBtnBox {
@@ -210,7 +230,6 @@ input, select {
     color: #fff; }
 
 .tabContents {
-  border: 1px solid #222;
   border-top: none; }
 
 .tabContentWrapper {
@@ -231,14 +250,12 @@ input, select {
   .listWithImage li {
     padding: 5px 0px;
     border-bottom: 1px solid #222; }
-    .listWithImage li:last-child {
-      border: none; }
 
 .timeHeader {
   color: #f00;
   text-decoration: none;
   font-size: 10px;
-  margin-bottom: 3px; }
+  margin-bottom: 5px; }
   .timeHeader time {
     color: #999;
     margin-right: 5px; }
@@ -247,3 +264,18 @@ input, select {
   width: 24%;
   float: left;
   margin: 0px 5px; }
+
+.actInfo {
+  display: block; }
+
+.rankingHeadText {
+  color: #999;
+  text-decoration: none;
+  font-size: 10px;
+  margin-bottom: 5px;
+  position: relative; }
+
+.rankingNum {
+  position: absolute;
+  top: 0px;
+  right: 0px; }
