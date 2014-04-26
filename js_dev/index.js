@@ -75,6 +75,11 @@ $(function() {
 
     // ニュース/注目ワード
     new Tab({
+        tabsSelector: '.jscMiddleTabs .contentTabsList li',
+        pagesSelector: '.jscMiddleTabs .tabContents'
+    });
+
+    new Tab({
         tabsSelector: '.jscBottomTabs .contentTabsList li',
         pagesSelector: '.jscBottomTabs .tabContents'
     })
