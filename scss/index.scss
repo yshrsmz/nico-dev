@@ -36,6 +36,16 @@
     margin-top: -4px;
 }
 
+%moreArrowLink {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABmUExURQAAAA8sXw8sXhAsXw8sXg8tXhItXw8tXxAtXwssYw4qYxAtXxAsXw8sXg8sXxAsXhAtXhAtXxAsXhAsXg8tXg8sXg4rXQ8tXw8tXxAtXxAsXgAqVRAtXw8sXxAsXxErYA8tXhAtXxta29AAAAAhdFJOUwCglG5hxDjx/hcSu/z19N/9mPou9+VX4UOI7wbb9vsdd+bVCmgAAABlSURBVBjTbdDHDoAwDAPQUqAte+/p//9JJCQkwMnxHRLHSqlzUTy29QUEulFAIIwEROkJCGSBgEBhBIRLYkZg1wICcy9gPRE+W9+4NnQoDyhSqjn89/sbB0OFbNSodR6XXB1/uQD3JhNLrszUjgAAAABJRU5ErkJggg==);
+    background-size: 10px 10px;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    right: 5px;
+    margin-top: -5px;
+}
+
 //icons
 .icons {
     @extend %noText;
@@ -105,9 +115,11 @@
     width: 100%;
     height: 25px;
     line-height: 25px;
-    padding: 0px 10px;
+    padding: 0px 20px;
     border-bottom: 1px solid #222;
     position: relative;
+    background: #ccc;
+    text-align: right;
 
     &:last-child {
         border: none;
@@ -115,7 +127,7 @@
 
     &:after {
         @extend %prePsedo;
-        @extend %arrowLink;
+        @extend %moreArrowLink;
     }
 
 }
@@ -124,6 +136,37 @@
     display: inline-block;
     width: 100%;
     height: 100%;
+}
+
+
+.infoIcon {
+    position: relative;
+    padding-left: 5px;
+    margin: 0px 5px;
+
+    &:after {
+        top: 4px;
+        left: -4px;
+        @extend %prePsedo;
+    }
+}
+
+
+.userNum:after {
+    @include actIconUser;
+}
+
+.commentNum:after {
+    @include actIconComment;
+}
+
+.favNum:after {
+    @include actIconFav;
+    width: 5px;
+}
+
+.playNum:after {
+    @include actIconPlay
 }
 
 //contentHeader
@@ -215,12 +258,55 @@
 }
 
 .sectionContentBox {
+    overflow: hidden;
     &.ranking,
     &.newsWord {
         border-bottom: 1px solid #222;
         margin-bottom: 5px;
     }
+}
 
+.categoryIcons {
+    position: relative;
+    -webkit-box-sizing: border-box;
+
+    &:after {
+        @extend %prePsedo;
+        top: 0px;
+        left: 5px;
+    }
+}
+
+.categoryListBox {
+    margin-bottom: 5px;
+
+    .categoryIcons {
+        padding-left: 40px;
+    }
+}
+
+.ent:after {
+    @include categoryEnt;
+}
+
+.life:after {
+    @include categoryLife;
+}
+
+.politics:after {
+    @include categoryPolitics;
+}
+
+.tech:after {
+    @include categoryTech;
+}
+
+.culture:after {
+    @include categoryCulture;
+}
+
+.other:after {
+    @include categoryOther;
 }
 
 
@@ -256,7 +342,6 @@
 }
 
 .contentTabsList {
-
     .tabItem {
         width: 32%;
         height: 35px;
@@ -324,12 +409,45 @@
         text-decoration: none;
     }
 
+    p {
+        width: 95%;
+        line-height: 1.1em;
+    }
+
     li {
         padding: 5px 0px;
         border-bottom: 1px solid #222;
+        -webkit-box-sizing: border-box;
 
         &:after {
             @extend %clearFix;
+        }
+    }
+
+    .small {
+        height: 35px;
+        line-height: 35px;
+        font-size: 12px;
+        float: left;
+        width: 50%;
+        padding: 0px 0px 0px 5px;
+        border-bottom: 1px solid #222;
+        p {
+            line-height: 35px;
+        }
+
+        &:nth-of-type(even){
+            border-right: 1px solid #222
+        }
+
+        &:after {
+            @extend %clearFix;
+        }
+
+        img {
+            float: left;
+            width: 17px;
+            margin: 7px 5px 0px 0px;
         }
     }
 }
@@ -366,8 +484,8 @@
 
 .rankingNum {
     position: absolute;
-    top: 0px;
-    right: 8px;
+    top: 3px;
+    right: -10px;
     color: #979797;
     font-size: 180%;
     font-weight: bold;
@@ -380,6 +498,7 @@
     border-bottom: 1px solid #222;
 }
 
+.categoryList,
 .wordList {
 
     li {
@@ -399,6 +518,24 @@
     a {
         color: #13346e;
         text-decoration: none;
+    }
+
+    &:after {
+        @extend %clearFix;
+    }
+}
+
+.socialBtnList {
+    margin-bottom: 10px;
+
+    li {
+        display: inline-block;
+        width: 50%;
+        float: left;
+    }
+
+    img {
+        width: 100%;
     }
 
     &:after {
@@ -524,6 +661,11 @@
             font-size: 14px;
         }
     }
+}
+
+.footerCopy {
+    color: #fff;
+    margin: 10px 0px;
 }
 
 .icon {
