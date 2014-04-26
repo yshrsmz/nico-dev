@@ -78,7 +78,7 @@
             initBubble();
         }
     } else {
-// 初回は表示
+        // 初回は表示
         // bookmarkbubbleここから
         initBubble();
         // bookmarkbubbleここまで
