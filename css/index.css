@@ -1,15 +1,4 @@
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,8 +11,7 @@ time, mark, audio, video {
 body {
   line-height: 1; }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
 ul {
@@ -35,8 +23,7 @@ blockquote, q {
 textarea {
   resize: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none; }
 
@@ -106,6 +93,12 @@ figcaption {
   right: 0px;
   padding: 3px 5px; }
 
+.icons.search, .icons.search.on, .icons.menu, .icons.menu.on, .siteLogo {
+  background-image: url("../img/sprite/sp_common.png");
+  background-repeat: no-repeat;
+  background-size: 165px 71px; }
+
+
 .moreInfo:after, .linkArrow:after {
   content: "";
   display: block;
@@ -122,9 +115,6 @@ figcaption {
   overflow: hidden;
   display: block; }
 
-.icons, .siteLogo {
-  background-image: url("../img/sprite/common_sprite.png");
-  background-size: 167px 68px; }
 
 .moreInfo:after, .linkArrow:after {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAKnAAACpwB9NLfEgAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNS8xNy8xMYJO2BkAAAAedEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzUuMasfSOsAAAFHSURBVDiNpdKxS5dBGAfwjxYJRUKbtrSGf0IYBAdH0B5mhXsRXEnR0BY4RdwSNmkSRQ3RFMLB0eBQQwSBQ1sFDRFaLS1h/Bx8g5/V+8s3n+mBOz5873luqNfrgZDKOE7jTs1xQ8ca7uvHMIebIZV9u4GOYT+uYy6kMvK/0AusNv0sbnSBhn7NCEIqR/EEE/iJazXH210TqTm+xTTeYw9uhVSudk7Ul2wSj3EYG7hUc7zbGWqw47iPI/iO8zXHp23QcNtBzXEFU3iHA1gKqZzrDDU1hoNN/wUf2y4Oeto05jGKzzhVc3zVBu1tQc5gASNYw9lByF8ThVQiHuEQ1jFTc3w2CPkjUUjlBBYb5JutTS3/C6Fv2CGVk3hg6+/0cGWnyDYI4w3yAxdrjos7RX6HXuIDLr9+/nC+C8L2GX3CBSx/fXOvq2MTwqpqQbHMjTYAAAAASUVORK5CYII=);
@@ -135,16 +125,22 @@ figcaption {
   right: 10px;
   margin-top: -4px; }
 
-.search,
-.menu {
-  width: 22px;
-  height: 22px; }
-
-.search {
-  background-position: -22px -23px; }
-
-.menu {
-  background-position: 0px -23px; }
+.icons.search {
+  width: 25px;
+  height: 25px;
+  background-position: -50px -25px; }
+  .icons.search.on {
+    width: 25px;
+    height: 25px;
+    background-position: 0px -25px; }
+.icons.menu {
+  width: 25px;
+  height: 25px;
+  background-position: 0px 0px; }
+  .icons.menu.on {
+    width: 25px;
+    height: 25px;
+    background-position: -25px -25px; }
 
 .loginBtn, .registNormal, .registPremiam {
   display: inline-block;
@@ -220,7 +216,8 @@ figcaption {
 
 .siteLogo {
   width: 140px;
-  height: 23px;
+  height: 25px;
+  background-position: -25px 0px;
   display: inline-block; }
 
 .pageHeadNavi {
@@ -255,7 +252,7 @@ figcaption {
   -webkit-box-pack: center;
   border-bottom: 1px solid #333; }
 
-.contentTabsList li {
+.contentTabsList .tabItem {
   width: 32%;
   height: 35px;
   line-height: 35px;
@@ -267,13 +264,19 @@ figcaption {
   border-bottom-right-radius: 0px;
   border-bottom: none;
   cursor: pointer; }
-  .contentTabsList li:first-child {
+  .contentTabsList .tabItem:first-child {
     margin: 0px; }
-  .contentTabsList li:last-child {
+  .contentTabsList .tabItem:last-child {
     margin: 0px; }
-  .contentTabsList li.selected {
+  .contentTabsList .tabItem.selected {
     background: #222;
     color: #fff; }
+.contentTabsList.twoTabs .tabItem {
+  width: 49%; }
+  .contentTabsList.twoTabs .tabItem:first-child {
+    margin: 0 1px 0 3px; }
+  .contentTabsList.twoTabs .tabItem:last-child {
+    margin: 0 3px 0 1px; }
 
 .tabContents {
   border-top: none; }
@@ -344,7 +347,7 @@ figcaption {
   padding-left: 5px;
   border-bottom: 1px solid #222; }
   .wordList li:nth-of-type(even) {
-    border-left: 1px solid #222222; }
+    border-left: 1px solid #222; }
 .wordList a {
   color: #13346e;
   text-decoration: none; }

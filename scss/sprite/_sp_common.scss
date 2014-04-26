@@ -1,0 +1,84 @@
+%_sp_common {
+   background-image: url("../img/sprite/sp_common.png");
+   background-repeat: no-repeat;
+   background-size: 165px 71px;
+}
+
+@mixin commonMenuOff {
+    @extend %_sp_common;
+    width: 25px;
+    height: 25px;
+    background-position: 0px 0px;
+}
+@mixin commonLogo {
+    @extend %_sp_common;
+    width: 140px;
+    height: 25px;
+    background-position: -25px 0px;
+}
+@mixin commonSearchOn {
+    @extend %_sp_common;
+    width: 25px;
+    height: 25px;
+    background-position: 0px -25px;
+}
+@mixin commonMenuOn {
+    @extend %_sp_common;
+    width: 25px;
+    height: 25px;
+    background-position: -25px -25px;
+}
+@mixin commonSearchOff {
+    @extend %_sp_common;
+    width: 25px;
+    height: 25px;
+    background-position: -50px -25px;
+}
+@mixin commonNews {
+    @extend %_sp_common;
+    width: 22px;
+    height: 22px;
+    background-position: -75px -25px;
+}
+@mixin commonTvMain {
+    @extend %_sp_common;
+    width: 22px;
+    height: 22px;
+    background-position: -97px -25px;
+}
+@mixin commonLive {
+    @extend %_sp_common;
+    width: 22px;
+    height: 22px;
+    background-position: -119px -25px;
+}
+@mixin commonCh {
+    @extend %_sp_common;
+    width: 21px;
+    height: 21px;
+    background-position: -141px -25px;
+}
+@mixin commonBlog {
+    @extend %_sp_common;
+    width: 20px;
+    height: 21px;
+    background-position: 0px -50px;
+}
+@mixin commonEnterbrain {
+    @extend %_sp_common;
+    width: 20px;
+    height: 19px;
+    background-position: -20px -50px;
+}
+@mixin commonTvShadow {
+    @extend %_sp_common;
+    width: 20px;
+    height: 19px;
+    background-position: -39px -50px;
+}
+@mixin commonBook {
+    @extend %_sp_common;
+    width: 21px;
+    height: 14px;
+    background-position: -59px -50px;
+}

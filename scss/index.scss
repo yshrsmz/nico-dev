@@ -1,4 +1,7 @@
 @import "_reset";
+@import "sprite/_sp_common";
+@import "sprite/_sp_category";
+
 //commonとかは使ってないので他のページとの協調性0
 //@import "_common";
 //@import "_site_header";
@@ -45,22 +48,26 @@ $commonIconSpritePathSizeY: 136px;
 //icons
 .icons {
     @extend %noText;
-    @extend %commonSprite;
+    //@extend %commonSprite;
+
+    &.search {
+        @include commonSearchOff;
+
+        &.on {
+            @include commonSearchOn;
+        }
+    }
+
+    &.menu {
+        @include commonMenuOff;
+
+        &.on {
+            @include commonMenuOn;
+        }
+    }
 }
 
-.search,
-.menu {
-    width: 22px;
-    height: 22px;
-}
 
-.search {
-    background-position: -22px -23px;
-}
-
-.menu {
-    background-position: 0px -23px;
-}
 
 //btns
 %btnSizeCommon {
@@ -176,9 +183,10 @@ $commonIconSpritePathSizeY: 136px;
 
 .siteLogo {
     @extend %noText;
-    @extend %commonSprite;
-    width: 140px;
-    height: 23px;
+//    @extend %commonSprite;
+//    width: 140px;
+//    height: 23px;
+    @include commonLogo;
     display: inline-block;
 }
 
@@ -238,30 +246,45 @@ $commonIconSpritePathSizeY: 136px;
     border-bottom: 1px solid #333;
 }
 
-.contentTabsList li {
-    width: 32%;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    margin: 0px 3px;
-    border: 1px solid #222;
-    border-radius: 3px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-bottom: none;
-    cursor: pointer;
+.contentTabsList {
 
-    &:first-child {
-        margin: 0px;
+    .tabItem {
+        width: 32%;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        margin: 0px 3px;
+        border: 1px solid #222;
+        border-radius: 3px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom: none;
+        cursor: pointer;
+
+        &:first-child {
+            margin: 0px;
+        }
+
+        &:last-child {
+            margin: 0px;
+        }
+
+        &.selected {
+            background: #222;
+            color: #fff;
+        }
     }
 
-    &:last-child{
-        margin: 0px;
-    }
+    &.twoTabs .tabItem {
+        width: 49%;
 
-    &.selected {
-        background: #222;
-        color: #fff;
+        &:first-child {
+            margin: 0 1px 0 3px;
+        }
+
+        &:last-child {
+            margin: 0 3px 0 1px;
+        }
     }
 }
 

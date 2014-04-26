@@ -21,6 +21,7 @@
     "grunt-contrib-htmlmin": "^0.2.0",
     "grunt-contrib-uglify": "^0.4.0",
     "grunt-csso": "^0.6.1",
-    "grunt-sass": "^0.12.1"
+    "grunt-sass": "^0.12.1",
+    "grunt-spritesheet-generator": "git://github.com/yshrsmz/grunt-spritesheet-generator.git"
   }
 }

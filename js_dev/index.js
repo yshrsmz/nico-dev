@@ -67,11 +67,13 @@ $(function() {
     };
 
     // タブの初期化
+    // 生放送/オススメ/ボカロ
     new Tab({
         tabsSelector: '.jscTopTabs .contentTabsList li',
         pagesSelector: '.jscTopTabs .tabContents'
     });
 
+    // ニュース/注目ワード
     new Tab({
         tabsSelector: '.jscBottomTabs .contentTabsList li',
         pagesSelector: '.jscBottomTabs .tabContents'
