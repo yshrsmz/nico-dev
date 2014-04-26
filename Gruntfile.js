@@ -24,12 +24,9 @@ module.exports = function(grunt) {
                         //'./js_dev/categoryalliance.js',
                         './js_dev/nicoapi.js',
                         //'./js_dev/adsSimple-1.0.0.min.js',
-                        './js_dev/common.js'
-                    ],
-                    'js/index.min.js': [
                         './js_dev/bookmarkbubble.js',
                         './js_dev/bookmarkbubble_move.js',
-                        //'./js_dev/middle_banner.js',
+                        './js_dev/common.js',
                         './js_dev/index.js'
                     ]
                 }
@@ -45,12 +42,9 @@ module.exports = function(grunt) {
                         //'./js_dev/categoryalliance.js',
                         './js_dev/nicoapi.js',
                         //'./js_dev/adsSimple-1.0.0.min.js',
-                        './js_dev/common.js'
-                    ],
-                    'js/index.min.js': [
-                        './js_dev/bookmarkbubble.js',
-                        './js_dev/bookmarkbubble_move.js',
-                        //'./js_dev/middle_banner.js',
+                        //'./js_dev/bookmarkbubble.js',
+                        //'./js_dev/bookmarkbubble_move.js',
+                        './js_dev/common.js',
                         './js_dev/index.js'
                     ]
                 }
