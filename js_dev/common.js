@@ -36,10 +36,10 @@ if (!Function.prototype.bind) {
 				
 				search_button_list.each(function(index, element) {
 					var input_selector = '#' + jQuery(element).data('searchInputId');
-					var $input = jQuery(input_selector);
+					var $input = $(input_selector);
 					
-					jQuery(element).click(function() {
-						var type = jQuery(element).data('searchType');
+					$(element).click(function() {
+						var type = $(element).data('searchType');
 						var text = $input.val();
 						searchSubmit(type, text);
 					});
@@ -60,6 +60,9 @@ if (!Function.prototype.bind) {
 
 	$(function() {
 		Nico_SearchSubmitController.initialize();
+
+        // start lazy load images
+        new Lazyload();
 	});
 })();
 

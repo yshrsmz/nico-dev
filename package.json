@@ -18,6 +18,7 @@
   "homepage": "https://github.com/yshrsmz/nico-dev",
   "devDependencies": {
     "grunt": "^0.4.4",
+    "grunt-contrib-htmlmin": "^0.2.0",
     "grunt-contrib-uglify": "^0.4.0",
     "grunt-csso": "^0.6.1",
     "grunt-sass": "^0.12.1"

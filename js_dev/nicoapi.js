@@ -20,7 +20,7 @@ var NicoAPI = window.NicoAPI = {
 		params = params || {};
 		dataType = dataType || "text";
 		var responder = new NicoAPI.Responder;
-		responder.xhr = jQuery.ajax({
+		responder.xhr = $.ajax({
 			"type":		method,
 			"url":		api,
 			"data":		params,

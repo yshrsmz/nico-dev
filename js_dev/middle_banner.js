@@ -1,7 +1,7 @@
 var Nico_MiddleBanner = (function() {
 	var MiddleBannerView = {
 		'getMiddleBannerZoneId': function() {
-			return parseInt(jQuery('#jsMiddleBannerZoneId').val(), 10);
+			return parseInt($('#jsMiddleBannerZoneId').val(), 10);
 		}
 	};
 	
@@ -37,6 +37,6 @@ var Nico_MiddleBanner = (function() {
 	return MiddleBannerController;
 })();
 
-jQuery(function () {
+$(function () {
 	Nico_MiddleBanner.initialize();
 });

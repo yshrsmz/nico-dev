@@ -1,4 +1,4 @@
-// jQuery 依存
+// jquery/zepto.js 依存
 
 window.Nico_CategoryAllianceController = (function () {
 	var ads_base_url;
@@ -7,7 +7,7 @@ window.Nico_CategoryAllianceController = (function () {
 		var path = 'api/OxBannerService/getAdvertisementsAndLogImpression.jsonp?callback=?';
 		
 		var fetchByZoneId = function (zone_id, callback) {
-			jQuery.getJSON(
+			$.getJSON(
 				ads_base_url + path,
 				{
 					'zone': zone_id
@@ -61,7 +61,7 @@ window.Nico_CategoryAllianceController = (function () {
 		};
 		return {
 			'setCategoryAllianceArea' : function (_area_selector) {
-				$area_dom = jQuery(_area_selector);
+				$area_dom = $(_area_selector);
 				ads_area_list = $area_dom.find('li');
 				top_ad = $area_dom.find('.jsCategoryAllianceTopAd');
 				if (ads_area_list.size() > 0) {
@@ -79,9 +79,9 @@ window.Nico_CategoryAllianceController = (function () {
 			},
 			'setAdsData' : function (ads_list) {
 				var ads_exists = false;
-				jQuery(ads_area_list).each(function (index) {
+				$(ads_area_list).each(function (index) {
 					if (ads_list[index]) {
-						applyAdsData(ads_list[index], jQuery(this));
+						applyAdsData(ads_list[index], $(this));
 						ads_exists = true;
 					}
 				});
