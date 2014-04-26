@@ -1,5 +1,12 @@
 @import "_reset";
-@import "_common";
-@import "_site_header";
-@import "_special_pickup";
+//commonとかは使ってないので他のページとの協調性0
+//@import "_common";
+//@import "_site_header";
+//@import "_special_pickup";
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
 

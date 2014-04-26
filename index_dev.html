@@ -20,8 +20,8 @@
     <header class="pageHeader">
         <h1 class="siteLogo">niconico</h1>
         <ul class="pageHeadNavi">
-            <li></li>
-            <li></li>
+            <li class="pageHeadIcon search">検索</li>
+            <li class="pageHeadIcon menu">メニュー</li>
         </ul>
     </header>
     <div class="mainContent">
@@ -29,13 +29,13 @@
             <p class="loginBtn"><a href="#" class="loginBtn">ログイン</a></p>
             <p class="toRegistPremiam">プレミアム登録はこちら</p>
         </div>
-        <div class="topContentBox">
-            <ul class="topContentTabs">
+        <section class="sectionContentBox top">
+            <ul class="contentTabsList">
                 <li data-show-id="live">生放送</li>
                 <li data-show-id="recommend">おすすめ</li>
-                <li data-show-id="ranking">ランキング</li>
+                <li data-show-id="vocaloid">VOCALOID</li>
             </ul>
-            <div class="topContents" id="live">
+            <div class="tabContents" id="live">
                 <ul class="listImage">
                     <li>
                         <a href="#" class="lineLink">
@@ -69,7 +69,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="topContents" id="">
+            <div class="tabContents" id="recommend">
                 <ul class="listImage">
                     <li>
                         <a href="#" class="lineLink">
@@ -103,8 +103,28 @@
                     </li>
                 </ul>
             </div>
-            <div class="topContents" id="ranking">
+            <div class="tabContents" id="vocaloid">
                 <ul class="listImage">
+                    <li>
+                        <a href="#" class="lineLink">
+                            <img src="">
+                            <p><time>00:00〜00:00</time>NOW ON AIR!!<span class="rankingNum">1</span></p>
+                            <p>
+                                見出し見出し見出し
+                                <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="lineLink">
+                            <img src="">
+                            <p><time>00:00〜00:00</time>NOW ON AIR!!<span class="rankingNum">1</span></p>
+                            <p>
+                                見出し見出し見出し
+                                <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
+                            </p>
+                        </a>
+                    </li>
                     <li>
                         <a href="#" class="lineLink">
                             <img src="">
@@ -117,7 +137,70 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
+        <section class="sectionContentBox">
+            <h2 class="contentHeader">ランキング</h2>
+            <ul class="listImage">
+                <li>
+                    <a href="#" class="lineLink">
+                        <img src="">
+                        <p><time>00:00〜00:00</time>NOW ON AIR!!<span class="rankingNum">1</span></p>
+                        <p>
+                            見出し見出し見出し
+                            <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="lineLink">
+                        <img src="">
+                        <p><time>00:00〜00:00</time>NOW ON AIR!!<span class="rankingNum">1</span></p>
+                        <p>
+                            見出し見出し見出し
+                            <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="lineLink">
+                        <img src="">
+                        <p><time>00:00〜00:00</time>NOW ON AIR!!<span class="rankingNum">1</span></p>
+                        <p>
+                            見出し見出し見出し
+                            <span class="actInfo"><em class="userNum">9999</em><em class="commentNum">99999999</em></span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="sectionContentBox">
+            <ul class="contentTabsList">
+                <li data-show-id="news">ニュース</li>
+                <li data-show-id="word">注目ワード</li>
+            </ul>
+            <div class="tabContents" id="news">
+                <ul class="textList">
+                    <li><a href="#" class="lineLink">見出し見出し見出し</a></li>
+                    <li><a href="#" class="lineLink">見出し見出し見出し</a></li>
+                    <li><a href="#" class="lineLink">見出し見出し見出し</a></li>
+                    <li><a href="#" class="lineLink">見出し見出し見出し</a></li>
+                    <li><a href="#" class="lineLink">見出し見出し見出し</a></li>
+                    <li><a href="#" class="lineLink">見出し見出し見出し</a></li>
+                </ul>
+                <p class="moreInfoLink">もっと見る</p>
+            </div>
+            <div class="tabContents" id="news">
+                <ul class="wordList">
+                    <li><a href="#" class="lineLink"></a></li>
+                    <li><a href="#" class="lineLink"></a></li>
+                    <li><a href="#" class="lineLink"></a></li>
+                    <li><a href="#" class="lineLink"></a></li>
+                    <li><a href="#" class="lineLink"></a></li>
+                    <li><a href="#" class="lineLink"></a></li>
+                </ul>
+                <p class="moreInfoLink">もっと見る</p>
+            </div>
+        </section>
     </div>
 </div>
 <div class="dialogBox">
@@ -137,7 +220,7 @@
 <script src="./js/bookmarkbubble_move.js" type="text/javascript" charset="utf-8"></script>
 <script src="./js/nicoapi.js" type="text/javascript" charset="utf-8"></script>
 
-
+<!--
 <header role="banner" class="header global" id="jsSiteHeader">
     <div class="hdInner">
         <div class="hdLogo">
@@ -979,7 +1062,7 @@
     </div>
     <p style="padding:7px 0 15px 0;">&copy;niwango, inc. photo by pakutaso.com</p>
 </section>
-
+-->
 <input type="hidden" id="jsBaseUrl" value="http://sp.nicovideo.jp/"/>
 <input type="hidden" id="jsRequestedTime" value="1396849680"/>
 <input type="hidden" id="jsNotifyBaseUrl" value="http://notify.nicovideo.jp/"/>
