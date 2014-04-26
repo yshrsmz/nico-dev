@@ -1,0 +1,25 @@
+{
+  "name": "nico-dev",
+  "version": "0.0.1",
+  "description": "niconico.next",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yshrsmz/nico-dev.git"
+  },
+  "author": "yshrsmz, alterf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yshrsmz/nico-dev/issues"
+  },
+  "homepage": "https://github.com/yshrsmz/nico-dev",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-csso": "^0.6.1",
+    "grunt-sass": "^0.12.1"
+  }
+}

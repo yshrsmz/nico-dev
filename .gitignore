@@ -1,9 +1,3 @@
-.idea/.name
-.idea/encodings.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/nico-dev.iml
-.idea/scopes/scope_settings.xml
-.idea/vcs.xml
-.idea/watcherTasks.xml
-.idea/workspace.xml
+node_modules/
+.idea/
+*.iml
