@@ -31,11 +31,11 @@ if (!Function.prototype.bind) {
 		
 		return {
 			'initialize':function() {
-				var search_button_list = jQuery('.jsSearchButton');
+				var search_button_list = $('.jsSearchButton');
 				var hash = {};
 				
 				search_button_list.each(function(index, element) {
-					var input_selector = '#' + jQuery(element).data('searchInputId');
+					var input_selector = '#' + $(element).data('searchInputId');
 					var $input = $(input_selector);
 					
 					$(element).click(function() {
