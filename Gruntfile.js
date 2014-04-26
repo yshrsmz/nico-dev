@@ -13,10 +13,22 @@ module.exports = function(grunt) {
             }
         },
         sass: {
-
+            dist: {
+                files: {
+                    './css/*.css':'./scss/*.scss'
+                }
+            }
         },
         csso: {
-
+            compress: {
+                //TODO:このオプションはあとで見る
+//                options: {
+//                    report: 'gzip'
+//                },
+                files: {
+                    './css/index.min.css': './css/index.css'
+                }
+            },
         }
     });
 
