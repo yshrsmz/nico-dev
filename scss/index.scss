@@ -136,6 +136,37 @@
     height: 100%;
 }
 
+
+.infoIcon {
+    position: relative;
+    padding-left: 5px;
+    margin: 0px 5px;
+
+    &:after {
+        top: 4px;
+        left: -4px;
+        @extend %prePsedo;
+    }
+}
+
+
+.userNum:after {
+    @include actIconUser;
+}
+
+.commentNum:after {
+    @include actIconComment;
+}
+
+.favNum:after {
+    @include actIconFav;
+    width: 5px;
+}
+
+.playNum:after {
+    @include actIconPlay
+}
+
 //contentHeader
 .contentHeader {
     background: #222;
@@ -216,9 +247,47 @@
     }
 }
 
-.categoryList {
+.categoryIcons {
+    position: relative;
+    -webkit-box-sizing: border-box;
 
-    
+    &:after {
+        @extend %prePsedo;
+        top: 0px;
+        left: 5px;
+    }
+}
+
+.categoryListBox {
+    margin-bottom: 5px;
+
+    .categoryIcons {
+        padding-left: 40px;
+    }
+}
+
+.ent:after {
+    @include categoryEnt;
+}
+
+.life:after {
+    @include categoryLife;
+}
+
+.politics:after {
+    @include categoryPolitics;
+}
+
+.tech:after {
+    @include categoryTech;
+}
+
+.culture:after {
+    @include categoryCulture;
+}
+
+.other:after {
+    @include categoryOther;
 }
 
 
@@ -335,6 +404,33 @@
             @extend %clearFix;
         }
     }
+
+    .small {
+        height: 35px;
+        line-height: 35px;
+        font-size: 12px;
+        float: left;
+        width: 50%;
+        padding: 0px 0px 0px 5px;
+        border-bottom: 1px solid #222;
+        p {
+            line-height: 35px;
+        }
+
+        &:nth-of-type(even){
+            border-right: 1px solid #222
+        }
+
+        &:after {
+            @extend %clearFix;
+        }
+
+        img {
+            float: left;
+            width: 17px;
+            margin: 7px 5px 0px 0px;
+        }
+    }
 }
 
 .timeHeader {
@@ -369,8 +465,8 @@
 
 .rankingNum {
     position: absolute;
-    top: 0px;
-    right: 8px;
+    top: 3px;
+    right: -10px;
     color: #979797;
     font-size: 180%;
     font-weight: bold;
@@ -383,6 +479,7 @@
     border-bottom: 1px solid #222;
 }
 
+.categoryList,
 .wordList {
 
     li {

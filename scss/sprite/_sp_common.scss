@@ -4,67 +4,67 @@
    background-size: 255px 90px;
 }
 
-@mixin categoryAll {
+@mixin categoryOther {
     @extend %_sp_common;
     width: 30px;
     height: 30px;
     background-position: 0px 0px;
 }
-@mixin categoryLife {
+@mixin categoryTech {
     @extend %_sp_common;
     width: 30px;
     height: 30px;
     background-position: -30px 0px;
 }
-@mixin categoryOther {
+@mixin categoryAll {
     @extend %_sp_common;
     width: 30px;
     height: 30px;
     background-position: 0px -30px;
 }
-@mixin categoryPolitics {
+@mixin categoryCulture {
     @extend %_sp_common;
     width: 30px;
     height: 30px;
     background-position: -30px -30px;
 }
-@mixin categoryTech {
+@mixin categoryEnt {
     @extend %_sp_common;
     width: 30px;
     height: 30px;
     background-position: -60px 0px;
 }
-@mixin categoryEnt {
+@mixin categoryLife {
     @extend %_sp_common;
     width: 30px;
     height: 30px;
     background-position: -60px -30px;
 }
-@mixin categoryCulture {
+@mixin categoryPolitics {
     @extend %_sp_common;
     width: 30px;
     height: 30px;
     background-position: 0px -60px;
 }
-@mixin commonMenuOn {
+@mixin commonSearchOn {
     @extend %_sp_common;
     width: 25px;
     height: 25px;
     background-position: -30px -60px;
 }
-@mixin commonSearchOn {
+@mixin commonMenuOn {
     @extend %_sp_common;
     width: 25px;
     height: 25px;
     background-position: -55px -60px;
 }
-@mixin commonSearchOff {
+@mixin commonMenuOff {
     @extend %_sp_common;
     width: 25px;
     height: 25px;
     background-position: -90px 0px;
 }
-@mixin commonMenuOff {
+@mixin commonSearchOff {
     @extend %_sp_common;
     width: 25px;
     height: 25px;
@@ -94,25 +94,25 @@
     height: 22px;
     background-position: -159px -25px;
 }
-@mixin commonBlog {
-    @extend %_sp_common;
-    width: 20px;
-    height: 21px;
-    background-position: -181px -25px;
-}
 @mixin commonCh {
     @extend %_sp_common;
     width: 21px;
     height: 21px;
-    background-position: -201px -25px;
+    background-position: -181px -25px;
 }
-@mixin commonTvShadow {
+@mixin commonBlog {
+    @extend %_sp_common;
+    width: 20px;
+    height: 21px;
+    background-position: -202px -25px;
+}
+@mixin commonEnterbrain {
     @extend %_sp_common;
     width: 20px;
     height: 19px;
     background-position: -222px -25px;
 }
-@mixin commonEnterbrain {
+@mixin commonTvShadow {
     @extend %_sp_common;
     width: 20px;
     height: 19px;
@@ -123,4 +123,28 @@
     width: 21px;
     height: 14px;
     background-position: -135px -47px;
+}
+@mixin actIconFav {
+    @extend %_sp_common;
+    width: 6px;
+    height: 5px;
+    background-position: -241px -25px;
+}
+@mixin actIconUser {
+    @extend %_sp_common;
+    width: 4px;
+    height: 5px;
+    background-position: -247px -25px;
+}
+@mixin actIconPlay {
+    @extend %_sp_common;
+    width: 5px;
+    height: 5px;
+    background-position: -250px -25px;
+}
+@mixin actIconComment {
+    @extend %_sp_common;
+    width: 7px;
+    height: 5px;
+    background-position: -241px -30px;
 }
