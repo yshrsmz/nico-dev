@@ -31,7 +31,7 @@ if (!Function.prototype.bind) {
 		
 		return {
 			'initialize':function() {
-				var search_button_list = $('.jsSearchButton');
+				var search_button_list = $('.jscSearchButton');
 				var hash = {};
 				
 				search_button_list.each(function(index, element) {

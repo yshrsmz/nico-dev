@@ -1,5 +1,7 @@
 $(function() {
-    var Tab;
+    var _d = document,
+        icons = _d.getElementsByClassName('pageHeadNavi')[0].getElementsByClassName('icons'),
+        Tab;
 
     Tab = function (settings) {
         this._init(settings);
@@ -82,14 +84,39 @@ $(function() {
     new Tab({
         tabsSelector: '.jscBottomTabs .contentTabsList li',
         pagesSelector: '.jscBottomTabs .tabContents'
-    })
+    });
+
+    // メニュー
+    $(document).on('click', '.pageHeader .pageHeadNavi .icons', function(e) {
+        var targetId = this.getAttribute('data-target-nav');
+
+        // メニューの出し分け
+        for (var i = 0, len = icons.length; i < len; i++) {
+            var curId = icons[i].getAttribute('data-target-nav'),
+                styleMethod;
+
+            if (curId === targetId) {
+                styleMethod = 'addClass';
+
+                if ($(this).hasClass('active')) {
+                    styleMethod = 'removeClass';
+                }
+            } else {
+                styleMethod = 'removeClass';
+            }
+            $('#' + curId)[styleMethod]('active');
+            $(icons[i])[styleMethod]('active');
+        }
+
+
+    });
 
 
     // 注目カテゴリの初期化
-    Nico_CategoryAllianceController.setAdsBaseUrl("http://ads.nicovideo.jp/");
-    Nico_CategoryAllianceController.setCategoryAllianceArea("#jsCategoryAlliance");
-    Nico_CategoryAllianceController.fetchAdsList([271,271,271,271,271,271]);
-    Nico_CategoryAllianceController.fetchTopAd(466);
+//    Nico_CategoryAllianceController.setAdsBaseUrl("http://ads.nicovideo.jp/");
+//    Nico_CategoryAllianceController.setCategoryAllianceArea("#jsCategoryAlliance");
+//    Nico_CategoryAllianceController.fetchAdsList([271,271,271,271,271,271]);
+//    Nico_CategoryAllianceController.fetchTopAd(466);
 
 
 });

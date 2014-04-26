@@ -40,10 +40,12 @@
 .icons {
     @extend %noText;
 
+    cursor: pointer;
+
     &.search {
         @include commonSearchOff;
 
-        &.on {
+        &.active {
             @include commonSearchOn;
         }
     }
@@ -51,7 +53,7 @@
     &.menu {
         @include commonMenuOff;
 
-        &.on {
+        &.active {
             @include commonMenuOn;
         }
     }
@@ -162,7 +164,6 @@
 .pageHeader {
     width: 100%;
     background: #222;
-    padding: 10px;
     position: relative;
     margin-bottom: 10px;
 
@@ -171,13 +172,31 @@
     }
 }
 
+.hdInner {
+    padding: 10px;
+}
+
 .siteLogo {
     @extend %noText;
-//    @extend %commonSprite;
-//    width: 140px;
-//    height: 23px;
     @include commonLogo;
     display: inline-block;
+}
+
+.hdContent {
+    display: none;
+    padding: 10px;
+    background: #d7d7d7;
+
+    &.active {
+        display: block;
+    }
+}
+
+.hdContentHeader {
+    background: #767676;
+    color: white;
+    line-height: 30px;
+    text-align: center;
 }
 
 .pageHeadNavi {
@@ -405,5 +424,138 @@
         font-size: 12px;
         margin-bottom: 10px;
     }
+}
 
+.inputForm {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    border: #999 solid 1px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: #fff;
+    -webkit-appearance: none;
+    margin-bottom: 8px;
+
+    input[type=text] {
+        display: inline-block;
+        width: 100%;
+        line-height: 20px;
+        padding: 4px;
+        border: 0;
+        background: none;
+        font-size: 16px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+}
+
+.searchButton {
+    display: inline-block;
+    background: none;
+    border: none;
+    background-color: #ececec;
+    border: #fff solid 2px;
+    border-radius: 24px;
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+    width: 48%;
+    height: 30px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+}
+
+.contentSeparatorBottom {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: #999 solid 1px;
+    box-shadow: #ccc 0 1px 0;
+}
+
+.hdContentNav {
+    ul {
+        border: #ccc solid 1px;
+        border-bottom: 0;
+
+        &:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+    }
+
+    .top {
+        width: 100%;
+        text-align: center;
+        border-left: none;
+
+        a:before {
+            left: 65px;
+        }
+    }
+
+    li {
+        width: 50%;
+        float: left;
+        height: 40px;
+        background-color: #fff;
+        -webkit-box-sizing: border-box;
+        border-left: #ccc solid 1px;
+        border-bottom: #ccc solid 1px;
+
+        &:nth-child(2n) {
+            border-left: none;
+        }
+
+        &:last-child {
+            border-left: #ccc solid 1px;
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            color: #333;
+            width: 100%;
+            line-height: 40px;
+            padding-left: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+    }
+}
+
+.icon {
+    a {
+        padding-left: 30px !important;
+    }
+    a:before {
+        top: 8px;
+        left: 4px;
+        @extend %prePsedo;
+    }
+    &.icon-top a:before {
+        @include commonTvShadow;
+    }
+
+    &.icon-live a:before {
+        @include commonLive;
+    }
+
+    &.icon-channel a:before {
+        @include commonCh;
+    }
+
+    &.icon-blomaga a:before {
+        @include commonBlog;
+    }
+
+    &.icon-book a:before {
+        @include commonBook;
+    }
+
+    &.icon-news a:before {
+        @include commonNews;
+    }
 }

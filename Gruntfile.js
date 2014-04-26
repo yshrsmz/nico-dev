@@ -20,17 +20,16 @@ module.exports = function(grunt) {
                 files: {
                     'js/common.min.js': [
                         './js_dev/libs/zepto.min.js',
-                        './js_dev/libs/showMenu.js',
                         './js_dev/libs/lazyload.js',
-                        './js_dev/categoryalliance.js',
+                        //'./js_dev/categoryalliance.js',
                         './js_dev/nicoapi.js',
-                        './js_dev/adsSimple-1.0.0.min.js',
+                        //'./js_dev/adsSimple-1.0.0.min.js',
                         './js_dev/common.js'
                     ],
                     'js/index.min.js': [
                         './js_dev/bookmarkbubble.js',
                         './js_dev/bookmarkbubble_move.js',
-                        './js_dev/middle_banner.js',
+                        //'./js_dev/middle_banner.js',
                         './js_dev/index.js'
                     ]
                 }
@@ -42,17 +41,16 @@ module.exports = function(grunt) {
                 files: {
                     'js/common.min.js': [
                         './js_dev/libs/zepto.min.js',
-                        './js_dev/libs/showMenu.js',
                         './js_dev/libs/lazyload.js',
-                        './js_dev/categoryalliance.js',
+                        //'./js_dev/categoryalliance.js',
                         './js_dev/nicoapi.js',
-                        './js_dev/adsSimple-1.0.0.min.js',
+                        //'./js_dev/adsSimple-1.0.0.min.js',
                         './js_dev/common.js'
                     ],
                     'js/index.min.js': [
                         './js_dev/bookmarkbubble.js',
                         './js_dev/bookmarkbubble_move.js',
-                        './js_dev/middle_banner.js',
+                        //'./js_dev/middle_banner.js',
                         './js_dev/index.js'
                     ]
                 }
@@ -117,11 +115,21 @@ module.exports = function(grunt) {
                     './index.html': './index_dev.html'
                 }
             }
+        },
+        watch: {
+            all: {
+                files: ['scss/**/*.scss', 'js_dev/**/*.js'],
+                tasks: ['sass', 'uglify:dev'],
+                options: {
+                    spawn: false
+                }
+            }
         }
     });
 
     // Load the plugin
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-csso');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');

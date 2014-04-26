@@ -15,31 +15,66 @@
     <!-- TODO:最後に圧縮ファイル読み込みに変更 -->
     <link rel="stylesheet" href="./css/index.css">
 
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!-- Google Analytics設定するならしてくだし。ユーザーアカウントの設定は忘れずに！ -->
+    <!--<script>-->
+        <!--(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
+            <!--(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
+                <!--m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
+        <!--})(window,document,'script','//www.google-analytics.com/analytics.js','ga');-->
 
-        // Google Analyticsの設定する
-        ga('create', '', 'nicovideo.jp');
-        ga('send', 'pageview');
-    </script>
+        <!--// Google Analyticsの設定する-->
+        <!--ga('create', '', 'nicovideo.jp');-->
+        <!--ga('send', 'pageview');-->
+    <!--</script>-->
 </head>
 <body>
 <div class="wrapper">
     <header class="pageHeader">
-        <h1 class="siteLogo">niconico</h1>
-        <ul class="pageHeadNavi">
-            <li class="icons search">検索</li>
-            <li class="icons menu">メニュー</li>
-        </ul>
+        <div class="hdInner">
+            <h1 class="siteLogo">niconico</h1>
+            <ul class="pageHeadNavi">
+                <li class="icons search" data-target-nav="jsiHeadSearch">検索</li>
+                <li class="icons menu" data-target-nav="jsiHeadNav">メニュー</li>
+            </ul>
+        </div>
+
+        <div id="jsiHeadSearch" class="hdContent mdSearch">
+            <p class="inputForm">
+                <input id="jsiTopSearchText" type="text" value="" placeholder="キーワードまたはタグを入力" />
+            </p>
+
+            <p class="searchButtonWrapper contentSeparatorBottom">
+                <input class="searchButton jscSearchButton" type="button" data-search-type="search" data-search-input-id="jsiTopSearchText" value="キーワードから探す"/>
+                <input class="searchButton jscSearchButton" type="button" data-search-type="tag" data-search-input-id="jsiTopSearchText" value="タグから探す"/>
+            </p>
+
+            <nav class="hdContentNav">
+                <ul>
+                    <li><a class="linkArrow" href="http://sp.nicovideo.jp/search/">カテゴリから探す</a></li>
+                    <li><a class="linkArrow" href="http://sp.nicovideo.jp/ranking/fav/daily/all">ランキングから探す</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="jsiHeadNav" class="hdContent mdNavigation">
+            <h2 class="hdContentHeader">サービス一覧</h2>
+            <nav class="hdContentNav">
+                <ul>
+                    <li class="icon icon-top top"><a class="linkArrow" href="http://sp.nicovideo.jp/?cp_in=header">niconicoトップ / 動画</a></li>
+                    <li class="icon icon-live"><a class="linkArrow" href="http://sp.live.nicovideo.jp/?cp_in=header">生放送</a></li>
+                    <li class="icon icon-channel"><a class="linkArrow" href="http://sp.ch.nicovideo.jp/?cp_in=header">チャンネル</a></li>
+                    <li class="icon icon-blomaga"><a class="linkArrow" href="http://sp.ch.nicovideo.jp/portal/blomaga?cp_in=header">ブロマガ</a></li>
+                    <li class="icon icon-book"><a class="linkArrow" href="http://sp.book.nicovideo.jp/?cp_in=header">コミック・書籍</a></li>
+                    <li class="icon icon-news"><a class="linkArrow" href="http://news.nicovideo.jp/?cp_in=header">ニュース</a></li>
+                    <li class="blank"></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <div class="mainContent">
         <div class="loginBtnBox">
             <p class="loginBtn"><a href="https://secure.nicovideo.jp/secure/login_form?next_url=%2F&amp;site=spniconico&amp;time=1396849680&amp;hash_key=ad801b07">ログイン</a></p>
             <ul class="newRegistBtns">
-                <li class="registNormal"><a href="https://secure.nicovideo.jp/secure/register_sms?next_url=%2F&amp;site=spniconico&amp;after_landing=1&amp;sec=sp_video&amp;sub=newaccount_header">新規会員登¡録</a></li>
+                <li class="registNormal"><a href="https://secure.nicovideo.jp/secure/register_sms?next_url=%2F&amp;site=spniconico&amp;after_landing=1&amp;sec=sp_video&amp;sub=newaccount_header">新規会員登録</a></li>
                 <li class="registPremiam"><a href="https://secure.nicovideo.jp/payment/?site=spniconico&amp;next_url=%2F&amp;sec=sp_video&amp;sub=nologin_footer">プレミアム登録</a></li>
             </ul>
         </div>
