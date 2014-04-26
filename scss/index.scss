@@ -14,6 +14,13 @@ $commonIconSpritePathSizeY: 136px;
     position: absolute;
 }
 
+%noText {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+
 %commonSprite {
     background-image: url($commonIconSpritePath);
     background-size:  ($commonIconSpritePathSizeX / 2) ($commonIconSpritePathSizeY / 2);
@@ -21,8 +28,8 @@ $commonIconSpritePathSizeY: 136px;
 
 //icons
 .icons {
+    @extend %noText;
     @extend %commonSprite;
-    text-indent: -9999px;
 }
 
 .search,
@@ -102,17 +109,16 @@ $commonIconSpritePathSizeY: 136px;
 
 
 .siteLogo {
+    @extend %noText;
     @extend %commonSprite;
     width: 140px;
     height: 23px;
-    text-indent: -9999px;
     display: inline-block;
 }
 
 .pageHeadNavi {
     display: -webkit-box;
     float:right;
-    margin-right: 15px;
 
     .icons {
         margin: 0px 5px;
@@ -147,7 +153,7 @@ $commonIconSpritePathSizeY: 136px;
 .newRegistBtns li{
     display: inline-block;
     margin: 0px auto;
-    width: 49%;
+    width: 48%;
 }
 
 
@@ -163,14 +169,17 @@ $commonIconSpritePathSizeY: 136px;
     height: 35px;
     line-height: 35px;
     text-align: center;
-    margin: 0px 5px;
+    margin: 0px 3px;
     border: 1px solid #222;
     border-radius: 3px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border-bottom: none;
 
-    &:first-child,
+    &:first-child {
+        margin: 0px;
+    }
+
     &:last-child{
         margin: 0px;
     }
@@ -187,6 +196,12 @@ $commonIconSpritePathSizeY: 136px;
     border-top: none;
 }
 
+.tabContentWrapper {
+    position: relative;
+}
 
+.listImage {
+
+}
 
 
