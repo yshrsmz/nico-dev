@@ -117,7 +117,7 @@ figcaption {
   position: absolute; }
 
 .pageHeader:after, .newRegistBtns:after, .listWithImage li:after, .listWithImage .small:after, .categoryList:after,
-.wordList:after {
+.wordList:after, .socialBtnList:after {
   content: "";
   display: block;
   clear: both; }
@@ -471,6 +471,15 @@ figcaption {
 .wordList a {
   color: #13346e;
   text-decoration: none; }
+
+.socialBtnList {
+  margin-bottom: 10px; }
+  .socialBtnList li {
+    display: inline-block;
+    width: 50%;
+    float: left; }
+  .socialBtnList img {
+    width: 100%; }
 
 .footerLinks {
   text-align: center;

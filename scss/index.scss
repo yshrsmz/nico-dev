@@ -506,6 +506,24 @@
     }
 }
 
+.socialBtnList {
+    margin-bottom: 10px;
+
+    li {
+        display: inline-block;
+        width: 50%;
+        float: left;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &:after {
+        @extend %clearFix;
+    }
+}
+
 .footerLinks {
     text-align: center;
     background: #222;
