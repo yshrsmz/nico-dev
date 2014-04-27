@@ -1,15 +1,4 @@
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,8 +11,7 @@ time, mark, audio, video {
 body {
   line-height: 1; }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
 ul {
@@ -35,8 +23,7 @@ blockquote, q {
 textarea {
   resize: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none; }
 
@@ -116,8 +103,7 @@ figcaption {
   display: block;
   position: absolute; }
 
-.pageHeader:after, .newRegistBtns:after, .listWithImage li:after, .listWithImage .small:after, .categoryList:after,
-.wordList:after, .socialBtnList:after {
+.pageHeader:after, .newRegistBtns:after, .listWithImage li:after, .listWithImage .small:after, .categoryList:after, .wordList:after, .socialBtnList:after {
   content: "";
   display: block;
   clear: both; }
@@ -447,7 +433,7 @@ figcaption {
     .listWithImage .small p {
       line-height: 35px; }
     .listWithImage .small:nth-of-type(odd) {
-      border-left: 1px solid #222222; }
+      border-left: 1px solid #222; }
     .listWithImage .small img {
       float: left;
       width: 17px;
@@ -494,8 +480,7 @@ figcaption {
 .attentionBox {
   margin-bottom: 5px; }
 
-.categoryList li,
-.wordList li {
+.categoryList li, .wordList li {
   height: 35px;
   line-height: 35px;
   font-size: 12px;
@@ -503,11 +488,9 @@ figcaption {
   width: 50%;
   padding-left: 5px;
   border-bottom: 1px solid #222; }
-  .categoryList li:nth-of-type(even),
-  .wordList li:nth-of-type(even) {
-    border-left: 1px solid #222222; }
-.categoryList a,
-.wordList a {
+  .categoryList li:nth-of-type(even), .wordList li:nth-of-type(even) {
+    border-left: 1px solid #222; }
+.categoryList a, .wordList a {
   color: #13346e;
   text-decoration: none; }
 
@@ -654,47 +637,3 @@ figcaption {
   .adBox img {
     width: 100%;
     margin-bottom: -3px; }
-
-.bookmarkBubble {
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-  left: 0;
-  top: 0; }
-
-.bookmarkBubbleInner {
-  position: relative;
-  float: right;
-  right: 10px;
-  bottom: -5px;
-  width: 160px;
-  border: 2px solid #FFFF26;
-  padding: 12px 5px 10px 5px;
-  background-image: url(../img/bookmark/bg.png);
-  background-size: 170px 120px;
-  -webkit-border-radius: 10px;
-  -webkit-box-shadow: 0 0 8px #FFCC33;
-  font: 12px/12px sans-serif;
-  color: #000;
-  line-height: 18px; }
-
-.bookmarkBubbleAppleTouchImage {
-  float: left;
-  width: 40px;
-  height: 40px;
-  margin: -2px 6px 3px 10px;
-  background: url(../img/apple-touch-icon-114x114.png) no-repeat -1px -1px;
-  -webkit-background-size: 42px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); }
-
-.bookmarkBubbleClose {
-  position: absolute;
-  display: block;
-  top: 0;
-  right: 5px;
-  width: 24px;
-  height: 24px;
-  border: 10px solid transparent;
-  background: url(../img/bookmark/close.png) no-repeat;
-  background-size: 24px; }
