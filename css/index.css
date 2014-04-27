@@ -212,8 +212,6 @@ figcaption {
   width: 4px;
   height: 5px;
   background-position: -247px -25px;
-  width: 4px;
-  height: 5px;
   background-position: -246px -25px;
   left: -4px; }
 
@@ -232,7 +230,7 @@ figcaption {
 .playNum:after {
   width: 5px;
   height: 5px;
-  background-position: -250px -25px;
+  background-position: -251px -25px;
   left: -3px; }
 
 .contentHeader {
