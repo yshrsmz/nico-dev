@@ -1,4 +1,15 @@
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -11,7 +22,8 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 body {
   line-height: 1; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block; }
 
 ul {
@@ -23,7 +35,8 @@ blockquote, q {
 textarea {
   resize: none; }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
   content: none; }
 
@@ -103,7 +116,8 @@ figcaption {
   display: block;
   position: absolute; }
 
-.pageHeader:after, .newRegistBtns:after, .listWithImage li:after, .listWithImage .small:after, .categoryList:after, .wordList:after, .socialBtnList:after {
+.pageHeader:after, .newRegistBtns:after, .listWithImage li:after, .listWithImage .small:after, .categoryList:after,
+.wordList:after, .socialBtnList:after {
   content: "";
   display: block;
   clear: both; }
@@ -191,8 +205,6 @@ figcaption {
   position: relative;
   background: #ccc;
   text-align: right; }
-  .moreInfo:last-child {
-    border: none; }
 
 .lineLink {
   display: inline-block;
@@ -293,10 +305,8 @@ figcaption {
   margin: 0px auto; }
 
 .sectionContentBox {
-  overflow: hidden; }
-  .sectionContentBox.ranking, .sectionContentBox.newsWord {
-    border-bottom: 1px solid #222;
-    margin-bottom: 5px; }
+  overflow: hidden;
+  margin-bottom: 5px; }
 
 .hdContent .categoryList li {
   background: #fff;
@@ -437,7 +447,7 @@ figcaption {
     .listWithImage .small p {
       line-height: 35px; }
     .listWithImage .small:nth-of-type(odd) {
-      border-left: 1px solid #222; }
+      border-left: 1px solid #222222; }
     .listWithImage .small img {
       float: left;
       width: 17px;
@@ -484,7 +494,8 @@ figcaption {
 .attentionBox {
   margin-bottom: 5px; }
 
-.categoryList li, .wordList li {
+.categoryList li,
+.wordList li {
   height: 35px;
   line-height: 35px;
   font-size: 12px;
@@ -492,9 +503,11 @@ figcaption {
   width: 50%;
   padding-left: 5px;
   border-bottom: 1px solid #222; }
-  .categoryList li:nth-of-type(even), .wordList li:nth-of-type(even) {
-    border-left: 1px solid #222; }
-.categoryList a, .wordList a {
+  .categoryList li:nth-of-type(even),
+  .wordList li:nth-of-type(even) {
+    border-left: 1px solid #222222; }
+.categoryList a,
+.wordList a {
   color: #13346e;
   text-decoration: none; }
 

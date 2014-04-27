@@ -121,15 +121,10 @@
     background: #ccc;
     text-align: right;
 
-    &:last-child {
-        border: none;
-    }
-
     &:after {
         @extend %prePsedo;
         @extend %moreArrowLink;
     }
-
 }
 
 .lineLink {
@@ -268,11 +263,7 @@
 
 .sectionContentBox {
     overflow: hidden;
-    &.ranking,
-    &.newsWord {
-        border-bottom: 1px solid #222;
-        margin-bottom: 5px;
-    }
+    margin-bottom: 5px;
 }
 
 .hdContent {
