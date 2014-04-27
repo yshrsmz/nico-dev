@@ -298,17 +298,15 @@ figcaption {
     border-bottom: 1px solid #222;
     margin-bottom: 5px; }
 
-.hdContent .categoryList {
-  border: #ccc solid 1px; }
-  .hdContent .categoryList li {
-    background: #fff;
-    border: #ccc 1px solid; }
-    .hdContent .categoryList li:nth-of-type(even) {
-      border-left: #ccc 1px solid; }
-  .hdContent .categoryList .linkArrow {
-    font-size: 10px;
-    color: #333;
-    text-decoration: underline; }
+.hdContent .categoryList li {
+  background: #fff;
+  border: #ccc 1px solid; }
+  .hdContent .categoryList li:nth-of-type(even) {
+    border-left: #ccc 1px solid; }
+.hdContent .categoryList .linkArrow {
+  font-size: 10px;
+  color: #333;
+  text-decoration: underline; }
 
 .categoryIcons {
   position: relative;
