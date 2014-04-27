@@ -2,6 +2,7 @@
 
 - htmlの圧縮・組み直し
   - grunt-contrib-htmlmin
+  - index_dev.htmlが圧縮前のhtml。圧縮後がindex.html
   
 - 画像をCSSスプライトにまとめる
   - grunt-spiritesheet-generator
@@ -21,3 +22,7 @@
   
 - 画像の減色
   - imageoptim, imagealpha
+  
+詳しくはGruntfile.jsとpackage.jsonに
+
+作成: [yshrsmz](http://github.com/yshrsmz), [alterf](http://github.com/alterf)
